@@ -17,6 +17,7 @@
 PATH_FILES := vendor/huawei/g620s/proprietary
 
 PRODUCT_COPY_FILES += \
+    $(PATH_FILES)/lib/libcutils.so:system/lib/libcutils.so \
     $(PATH_FILES)/lib/libcutilz.so:system/lib/libcutilz.so \
     $(PATH_FILES)/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
     $(PATH_FILES)/lib/libqomx_core.so:system/lib/libqomx_core.so
