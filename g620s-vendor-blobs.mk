@@ -23,6 +23,9 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/lib/libqomx_core.so:system/lib/libqomx_core.so
 
 PRODUCT_COPY_FILES += \
+    $(PATH_FILES)/lib/libWVphoneAPI.so:system/lib/libWVphoneAPI.so
+
+PRODUCT_COPY_FILES += \
     vendor/huawei/g620s/proprietary/bin/adsprpcd:system/bin/adsprpcd \
     vendor/huawei/g620s/proprietary/vendor/lib/libadsprpc.so:system/vendor/lib/libadsprpc.so \
     vendor/huawei/g620s/proprietary/vendor/lib/libfastcvopt.so:system/vendor/lib/libfastcvopt.so \
