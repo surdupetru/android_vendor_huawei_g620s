@@ -20,6 +20,7 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/lib/libcutils.so:system/lib/libcutils.so \
     $(PATH_FILES)/lib/libcutilz.so:system/lib/libcutilz.so \
     $(PATH_FILES)/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
+    $(PATH_FILES)/lib/nfc_nci_pn547.default.so:system/lib/nfc_nci_pn547.default.so \
     $(PATH_FILES)/lib/libqomx_core.so:system/lib/libqomx_core.so
 
 PRODUCT_COPY_FILES += \
@@ -730,3 +731,11 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/g620s/proprietary/bin/iwpriv:system/bin/iwpriv \
     vendor/huawei/g620s/proprietary/bin/ptt_socket_app:system/bin/ptt_socket_app \
     vendor/huawei/g620s/proprietary/bin/wcnss_filter:system/bin/wcnss_filter
+    vendor/huawei/g620s/proprietary/bin/nfc_detect:system/bin/nfc_detect
+    vendor/huawei/g620s/proprietary/lib/libnfc_nci_jni_nxp.so:system/lib/libnfc_nci_jni_nxp.so
+    vendor/huawei/g620s/proprietary/lib/libnfc_ndef.so:system/lib/libnfc_ndef.so
+    vendor/huawei/g620s/proprietary/lib/libnfc-nci-nxp.so:system/lib/libnf-nci-nxp.so
+    vendor/huawei/g620s/proprietary/vendor/firmware/libpn547_fw.so:system/vendor/firmware/libpn547_fw.so
+    vendor/huawei/g620s/proprietary/vendor/lib/hw/nfc_nci.msm8916.so:system/vendor/lib/hw/nfc_nci.msm8916.so
+    vendor/huawei/g620s/proprietary/vendor/lib/libnfcD_nci_jni.so:system/vendor/lib/libnfcD_nci_jni.so
+    vendor/huawei/g620s/proprietary/vendor/lib/libnfcD-nci.so:system/vendor/lib/libnfcD-nci.so
