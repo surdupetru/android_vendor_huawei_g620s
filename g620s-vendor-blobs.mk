@@ -26,6 +26,11 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/lib/libWVphoneAPI.so:system/lib/libWVphoneAPI.so
 
 PRODUCT_COPY_FILES += \
+    $(PATH_FILES)/lib/hw/sensors.msm8916.so:system/lib/hw/sensors.msm8916.so \
+    $(PATH_FILES)/vendor/lib/libcalmodule_akm.so:system/vendor/lib/libcalmodule_akm.so \
+    $(PATH_FILES)/vendor/etc/calmodule.cfg:system/vendor/etc/calmodule.cfg
+
+PRODUCT_COPY_FILES += \
     vendor/huawei/g620s/proprietary/bin/adsprpcd:system/bin/adsprpcd \
     vendor/huawei/g620s/proprietary/vendor/lib/libadsprpc.so:system/vendor/lib/libadsprpc.so \
     vendor/huawei/g620s/proprietary/vendor/lib/libfastcvopt.so:system/vendor/lib/libfastcvopt.so \
