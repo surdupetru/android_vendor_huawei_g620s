@@ -645,8 +645,6 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libmmcamera_tuning.so:system/vendor/lib/libmmcamera_tuning.so \
     $(PATH_FILES)/vendor/lib/libmmcamera_wavelet_lib.so:system/vendor/lib/libmmcamera_wavelet_lib.so
 
-
-
 PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
     $(PATH_FILES)/vendor/lib/libacdbmapper.so:system/vendor/lib/libacdbmapper.so \
