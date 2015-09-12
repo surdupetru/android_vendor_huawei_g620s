@@ -39,6 +39,9 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/etc/calmodule.cfg:system/vendor/etc/calmodule.cfg
 
 PRODUCT_COPY_FILES += \
+    $(PATH_FILES)/etc/firmware/goodix_fw_g620S.bin:system/etc/firmware/goodix_fw_g620S.bin
+
+PRODUCT_COPY_FILES += \
     vendor/huawei/g620s/proprietary/bin/adsprpcd:system/bin/adsprpcd \
     vendor/huawei/g620s/proprietary/vendor/lib/libadsprpc.so:system/vendor/lib/libadsprpc.so \
     vendor/huawei/g620s/proprietary/vendor/lib/libfastcvopt.so:system/vendor/lib/libfastcvopt.so \
