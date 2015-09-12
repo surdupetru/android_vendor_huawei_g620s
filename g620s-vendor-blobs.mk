@@ -17,12 +17,56 @@
 PATH_FILES := vendor/huawei/g620s/proprietary
 
 PRODUCT_COPY_FILES += \
+    $(PATH_FILES)/bin/adsprpcd:system/bin/adsprpcd \
+    $(PATH_FILES)/bin/ATFWD-daemon:system/bin/ATFWD-daemon \
+    $(PATH_FILES)/bin/bridgemgrd:system/bin/bridgemgrd \
+    $(PATH_FILES)/bin/btnvtool:system/bin/btnvtool \
+    $(PATH_FILES)/bin/dpmd:system/bin/dpmd \
+    $(PATH_FILES)/bin/ds_fmc_appd:system/bin/ds_fmc_appd \
     $(PATH_FILES)/bin/gps_check:system/bin/gps_check \
+    $(PATH_FILES)/bin/gpsone_daemon:system/bin/gpsone_daemon \
+    $(PATH_FILES)/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
+    $(PATH_FILES)/bin/imsdatadaemon:system/bin/imsdatadaemon \
+    $(PATH_FILES)/bin/imsqmidaemon:system/bin/imsqmidaemon \
+    $(PATH_FILES)/bin/ims_rtp_daemon:system/bin/ims_rtp_daemon \
+    $(PATH_FILES)/bin/iperf:system/bin/iperf \
+    $(PATH_FILES)/bin/irsc_util:system/bin/irsc_util \
+    $(PATH_FILES)/bin/iw:system/bin/iw \
+    $(PATH_FILES)/bin/iwconfig:system/bin/iwconfig \
+    $(PATH_FILES)/bin/iwlist:system/bin/iwlist \
+    $(PATH_FILES)/bin/iwpriv:system/bin/iwpriv \
+    $(PATH_FILES)/bin/location-mq:system/bin/location-mq \
+    $(PATH_FILES)/bin/loc_launcher:system/bin/loc_launcher \
+    $(PATH_FILES)/bin/lowi-server:system/bin/lowi-server \
+    $(PATH_FILES)/bin/mm-pp-daemon:system/bin/mm-pp-daemon \
+    $(PATH_FILES)/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
+    $(PATH_FILES)/bin/mpdecision:system/bin/mpdecision \
+    $(PATH_FILES)/bin/netmgrd:system/bin/netmgrd \
     $(PATH_FILES)/bin/oeminfo_server:system/bin/oeminfo_server \
+    $(PATH_FILES)/bin/port-bridge:system/bin/port-bridge \
+    $(PATH_FILES)/bin/ptt_socket_app:system/bin/ptt_socket_app \
+    $(PATH_FILES)/bin/qcom-system-daemon:system/bin/qcom-system-daemon \
+    $(PATH_FILES)/bin/qmiproxy:system/bin/qmiproxy \
+    $(PATH_FILES)/bin/qmuxd:system/bin/qmuxd \
+    $(PATH_FILES)/bin/qseecomd:system/bin/qseecomd \
+    $(PATH_FILES)/bin/radish:system/bin/radish \
+    $(PATH_FILES)/bin/rfs_access:system/bin/rfs_access \
+    $(PATH_FILES)/bin/rmnetcli:system/bin/rmnetcli \
     $(PATH_FILES)/bin/rmt_oeminfo:system/bin/rmt_oeminfo \
     $(PATH_FILES)/bin/rmt_storage:system/bin/rmt_storage \
+    $(PATH_FILES)/bin/subsystem_ramdump:system/bin/subsystem_ramdump \
     $(PATH_FILES)/bin/test_diag:system/bin/test_diag \
-    $(PATH_FILES)/bin/test_oeminfo:system/bin/test_oeminfo
+    $(PATH_FILES)/bin/test_oeminfo:system/bin/test_oeminfo \
+    $(PATH_FILES)/bin/thermal-engine:system/bin/thermal-engine \
+    $(PATH_FILES)/bin/time_daemon:system/bin/time_daemon \
+    $(PATH_FILES)/bin/usbhub:system/bin/usbhub \
+    $(PATH_FILES)/bin/usbhub_init:system/bin/usbhub_init \
+    $(PATH_FILES)/bin/usb_uicc_client:system/bin/usb_uicc_client \
+    $(PATH_FILES)/bin/vm_bms:system/bin/vm_bms \
+    $(PATH_FILES)/bin/wcnss_filter:system/bin/wcnss_filter \
+    $(PATH_FILES)/bin/wdsdaemon:system/bin/wdsdaemon \
+    $(PATH_FILES)/bin/xtwifi-client:system/bin/xtwifi-client \
+    $(PATH_FILES)/bin/xtwifi-inet-agent:system/bin/xtwifi-inet-agent
 
 PRODUCT_COPY_FILES += \
     $(PATH_FILES)/lib/libcutils.so:system/lib/libcutils.so \
@@ -42,7 +86,6 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/etc/firmware/goodix_fw_g620S.bin:system/etc/firmware/goodix_fw_g620S.bin
 
 PRODUCT_COPY_FILES += \
-    vendor/huawei/g620s/proprietary/bin/adsprpcd:system/bin/adsprpcd \
     vendor/huawei/g620s/proprietary/vendor/lib/libadsprpc.so:system/vendor/lib/libadsprpc.so \
     vendor/huawei/g620s/proprietary/vendor/lib/libfastcvopt.so:system/vendor/lib/libfastcvopt.so \
     vendor/huawei/g620s/proprietary/vendor/lib/libscve.so:system/vendor/lib/libscve.so \
@@ -58,11 +101,7 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/g620s/proprietary/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so \
     vendor/huawei/g620s/proprietary/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so \
     vendor/huawei/g620s/proprietary/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so \
-    vendor/huawei/g620s/proprietary/bin/vm_bms:system/bin/vm_bms \
-    vendor/huawei/g620s/proprietary/bin/btnvtool:system/bin/btnvtool \
-    vendor/huawei/g620s/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     vendor/huawei/g620s/proprietary/vendor/lib/libbtnv.so:system/vendor/lib/libbtnv.so \
-    vendor/huawei/g620s/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
     vendor/huawei/g620s/proprietary/lib/libchromatix_imx135_liveshot.so:system/lib/libchromatix_imx135_liveshot.so \
     vendor/huawei/g620s/proprietary/lib/liboeminfo.so:system/lib/liboeminfo.so \
     vendor/huawei/g620s/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
@@ -517,7 +556,6 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/g620s/proprietary/etc/firmware/cpp_firmware_v1_1_6.fw:system/etc/firmware/cpp_firmware_v1_1_6.fw \
     vendor/huawei/g620s/proprietary/etc/firmware/cpp_firmware_v1_2_0.fw:system/etc/firmware/cpp_firmware_v1_2_0.fw \
     vendor/huawei/g620s/proprietary/etc/firmware/cpp_firmware_v1_4_0.fw:system/etc/firmware/cpp_firmware_v1_4_0.fw \
-    vendor/huawei/g620s/proprietary/bin/qseecomd:system/bin/qseecomd \
     vendor/huawei/g620s/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
     vendor/huawei/g620s/proprietary/lib/drm/libdrmhwomavoneplugin.so:system/lib/drm/libdrmhwomavoneplugin.so \
     vendor/huawei/g620s/proprietary/vendor/lib/drm/libdrmprplugin.so:system/vendor/lib/drm/libdrmprplugin.so \
@@ -535,7 +573,6 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/g620s/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
     vendor/huawei/g620s/proprietary/vendor/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd \
     vendor/huawei/g620s/proprietary/vendor/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd \
-    vendor/huawei/g620s/proprietary/bin/dpmd:system/bin/dpmd \
     vendor/huawei/g620s/proprietary/vendor/lib/libdpmctmgr.so:system/vendor/lib/libdpmctmgr.so \
     vendor/huawei/g620s/proprietary/vendor/lib/libdpmfdmgr.so:system/vendor/lib/libdpmfdmgr.so \
     vendor/huawei/g620s/proprietary/vendor/lib/libdpmframework.so:system/vendor/lib/libdpmframework.so \
@@ -563,13 +600,6 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/g620s/proprietary/etc/firmware/Signedrompatch_v21.bin:system/etc/firmware/Signedrompatch_v21.bin \
     vendor/huawei/g620s/proprietary/etc/firmware/Signedrompatch_v24.bin:system/etc/firmware/Signedrompatch_v24.bin \
     vendor/huawei/g620s/proprietary/etc/firmware/Signedrompatch_v30.bin:system/etc/firmware/Signedrompatch_v30.bin \
-    vendor/huawei/g620s/proprietary/bin/garden_app:system/bin/garden_app \
-    vendor/huawei/g620s/proprietary/bin/gpsone_daemon:system/bin/gpsone_daemon \
-    vendor/huawei/g620s/proprietary/bin/location-mq:system/bin/location-mq \
-    vendor/huawei/g620s/proprietary/bin/loc_launcher:system/bin/loc_launcher \
-    vendor/huawei/g620s/proprietary/bin/lowi-server:system/bin/lowi-server \
-    vendor/huawei/g620s/proprietary/bin/xtwifi-client:system/bin/xtwifi-client \
-    vendor/huawei/g620s/proprietary/bin/xtwifi-inet-agent:system/bin/xtwifi-inet-agent \
     vendor/huawei/g620s/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
     vendor/huawei/g620s/proprietary/etc/permissions/com.qualcomm.location.vzw_library.xml:system/etc/permissions/com.qualcomm.location.vzw_library.xml \
     vendor/huawei/g620s/proprietary/etc/cacert_location.pem:system/etc/cacert_location.pem \
@@ -629,9 +659,6 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/g620s/proprietary/etc/firmware/a330_pm4.fw:system/etc/firmware/a330_pm4.fw \
     vendor/huawei/g620s/proprietary/etc/firmware/a420_pfp.fw:system/etc/firmware/a420_pfp.fw \
     vendor/huawei/g620s/proprietary/etc/firmware/a420_pm4.fw:system/etc/firmware/a420_pm4.fw \
-    vendor/huawei/g620s/proprietary/bin/imsdatadaemon:system/bin/imsdatadaemon \
-    vendor/huawei/g620s/proprietary/bin/imsqmidaemon:system/bin/imsqmidaemon \
-    vendor/huawei/g620s/proprietary/bin/ims_rtp_daemon:system/bin/ims_rtp_daemon \
     vendor/huawei/g620s/proprietary/etc/permissions/ims.xml:system/etc/permissions/ims.xml \
     vendor/huawei/g620s/proprietary/vendor/lib/lib-dplmedia.so:system/vendor/lib/lib-dplmedia.so \
     vendor/huawei/g620s/proprietary/vendor/lib/lib-imscamera.so:system/vendor/lib/lib-imscamera.so \
@@ -668,20 +695,12 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/g620s/proprietary/vendor/lib/libOmxQcelp13Dec.so:system/vendor/lib/libOmxQcelp13Dec.so \
     vendor/huawei/g620s/proprietary/vendor/lib/libOmxMux.so:system/vendor/lib/libOmxMux.so \
     vendor/huawei/g620s/proprietary/vendor/lib/libSHIMDivxDrm.so:system/vendor/lib/libSHIMDivxDrm.so \
-    vendor/huawei/g620s/proprietary/bin/nl_listener:system/bin/nl_listener \
-    vendor/huawei/g620s/proprietary/bin/subsystem_ramdump:system/bin/subsystem_ramdump \
-    vendor/huawei/g620s/proprietary/bin/usb_uicc_client:system/bin/usb_uicc_client \
-    vendor/huawei/g620s/proprietary/bin/wdsdaemon:system/bin/wdsdaemon \
     vendor/huawei/g620s/proprietary/xbin/qlogd:system/xbin/qlogd \
-    vendor/huawei/g620s/proprietary/bin/mpdecision:system/bin/mpdecision \
     vendor/huawei/g620s/proprietary/vendor/lib/libqc-opt.so:system/vendor/lib/libqc-opt.so \
-    vendor/huawei/g620s/proprietary/bin/mm-pp-daemon:system/bin/mm-pp-daemon \
     vendor/huawei/g620s/proprietary/lib/libtinyxml2.so:system/lib/libtinyxml2.so \
     vendor/huawei/g620s/proprietary/vendor/lib/libdisp-aba.so:system/vendor/lib/libdisp-aba.so \
     vendor/huawei/g620s/proprietary/vendor/lib/libmm-abl.so:system/vendor/lib/libmm-abl.so \
     vendor/huawei/g620s/proprietary/vendor/lib/libmm-abl-oem.so:system/vendor/lib/libmm-abl-oem.so \
-    vendor/huawei/g620s/proprietary/bin/irsc_util:system/bin/irsc_util \
-    vendor/huawei/g620s/proprietary/bin/qcom-system-daemon:system/bin/qcom-system-daemon \
     vendor/huawei/g620s/proprietary/lib/libqmi_nv_api.so:system/lib/libqmi_nv_api.so \
     vendor/huawei/g620s/proprietary/lib/libqmi_oem_api.so:system/lib/libqmi_oem_api.so \
     vendor/huawei/g620s/proprietary/lib/libqmi_oem_svc.so:system/lib/libqmi_oem_svc.so \
@@ -702,16 +721,6 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/g620s/proprietary/vendor/lib/libqmi_csvt_srvc.so:system/vendor/lib/libqmi_csvt_srvc.so \
     vendor/huawei/g620s/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
     vendor/huawei/g620s/proprietary/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
-    vendor/huawei/g620s/proprietary/bin/ATFWD-daemon:system/bin/ATFWD-daemon \
-    vendor/huawei/g620s/proprietary/bin/bridgemgrd:system/bin/bridgemgrd \
-    vendor/huawei/g620s/proprietary/bin/ds_fmc_appd:system/bin/ds_fmc_appd \
-    vendor/huawei/g620s/proprietary/bin/netmgrd:system/bin/netmgrd \
-    vendor/huawei/g620s/proprietary/bin/port-bridge:system/bin/port-bridge \
-    vendor/huawei/g620s/proprietary/bin/qmuxd:system/bin/qmuxd \
-    vendor/huawei/g620s/proprietary/bin/radish:system/bin/radish \
-    vendor/huawei/g620s/proprietary/bin/rfs_access:system/bin/rfs_access \
-    vendor/huawei/g620s/proprietary/bin/rmnetcli:system/bin/rmnetcli \
-    vendor/huawei/g620s/proprietary/bin/qmiproxy:system/bin/qmiproxy \
     vendor/huawei/g620s/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
     vendor/huawei/g620s/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/huawei/g620s/proprietary/lib/libhwnv.so:system/lib/libhwnv.so \
@@ -725,24 +734,13 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/g620s/proprietary/vendor/lib/libril-qc-qmi-1.so:system/vendor/lib/libril-qc-qmi-1.so \
     vendor/huawei/g620s/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
     vendor/huawei/g620s/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
-    vendor/huawei/g620s/proprietary/bin/thermal-engine:system/bin/thermal-engine \
     vendor/huawei/g620s/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
     vendor/huawei/g620s/proprietary/vendor/lib/libthermalioctl.so:system/vendor/lib/libthermalioctl.so \
-    vendor/huawei/g620s/proprietary/bin/time_daemon:system/bin/time_daemon \
     vendor/huawei/g620s/proprietary/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
-    vendor/huawei/g620s/proprietary/bin/usbhub:system/bin/usbhub \
-    vendor/huawei/g620s/proprietary/bin/usbhub_init:system/bin/usbhub_init \
     vendor/huawei/g620s/proprietary/etc/firmware/venus.b00:system/etc/firmware/venus.b00 \
     vendor/huawei/g620s/proprietary/etc/firmware/venus.b01:system/etc/firmware/venus.b01 \
     vendor/huawei/g620s/proprietary/etc/firmware/venus.b02:system/etc/firmware/venus.b02 \
     vendor/huawei/g620s/proprietary/etc/firmware/venus.b03:system/etc/firmware/venus.b03 \
     vendor/huawei/g620s/proprietary/etc/firmware/venus.b04:system/etc/firmware/venus.b04 \
     vendor/huawei/g620s/proprietary/etc/firmware/venus.mbn:system/etc/firmware/venus.mbn \
-    vendor/huawei/g620s/proprietary/etc/firmware/venus.mdt:system/etc/firmware/venus.mdt \
-    vendor/huawei/g620s/proprietary/bin/iperf:system/bin/iperf \
-    vendor/huawei/g620s/proprietary/bin/iw:system/bin/iw \
-    vendor/huawei/g620s/proprietary/bin/iwconfig:system/bin/iwconfig \
-    vendor/huawei/g620s/proprietary/bin/iwlist:system/bin/iwlist \
-    vendor/huawei/g620s/proprietary/bin/iwpriv:system/bin/iwpriv \
-    vendor/huawei/g620s/proprietary/bin/ptt_socket_app:system/bin/ptt_socket_app \
-    vendor/huawei/g620s/proprietary/bin/wcnss_filter:system/bin/wcnss_filter
+    vendor/huawei/g620s/proprietary/etc/firmware/venus.mdt:system/etc/firmware/venus.mdt
