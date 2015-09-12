@@ -17,6 +17,14 @@
 PATH_FILES := vendor/huawei/g620s/proprietary
 
 PRODUCT_COPY_FILES += \
+    $(PATH_FILES)/bin/gps_check:system/bin/gps_check \
+    $(PATH_FILES)/bin/oeminfo_server:system/bin/oeminfo_server \
+    $(PATH_FILES)/bin/rmt_oeminfo:system/bin/rmt_oeminfo \
+    $(PATH_FILES)/bin/rmt_storage:system/bin/rmt_storage \
+    $(PATH_FILES)/bin/test_diag:system/bin/test_diag \
+    $(PATH_FILES)/bin/test_oeminfo:system/bin/test_oeminfo
+
+PRODUCT_COPY_FILES += \
     $(PATH_FILES)/lib/libcutils.so:system/lib/libcutils.so \
     $(PATH_FILES)/lib/libcutilz.so:system/lib/libcutilz.so \
     $(PATH_FILES)/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
