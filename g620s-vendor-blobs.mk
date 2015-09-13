@@ -24,6 +24,7 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/bin/btnvtool:system/bin/btnvtool \
     $(PATH_FILES)/bin/dpmd:system/bin/dpmd \
     $(PATH_FILES)/bin/ds_fmc_appd:system/bin/ds_fmc_appd \
+    $(PATH_FILES)/bin/garden_app:system/bin/garden_app \
     $(PATH_FILES)/bin/gps_check:system/bin/gps_check \
     $(PATH_FILES)/bin/gpsone_daemon:system/bin/gpsone_daemon \
     $(PATH_FILES)/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
@@ -53,6 +54,7 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/bin/qseecomd:system/bin/qseecomd \
     $(PATH_FILES)/bin/radish:system/bin/radish \
     $(PATH_FILES)/bin/rfs_access:system/bin/rfs_access \
+    $(PATH_FILES)/bin/rild:system/bin/rild \
     $(PATH_FILES)/bin/rmnetcli:system/bin/rmnetcli \
     $(PATH_FILES)/bin/rmt_oeminfo:system/bin/rmt_oeminfo \
     $(PATH_FILES)/bin/rmt_storage:system/bin/rmt_storage \
