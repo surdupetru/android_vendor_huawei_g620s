@@ -40,6 +40,7 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/bin/loc_launcher:system/bin/loc_launcher \
     $(PATH_FILES)/bin/lowi-server:system/bin/lowi-server \
     $(PATH_FILES)/bin/mm-pp-daemon:system/bin/mm-pp-daemon \
+    $(PATH_FILES)/bin/mm-qcamera-app:system/bin/mm-qcamera-app \
     $(PATH_FILES)/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
     $(PATH_FILES)/bin/mpdecision:system/bin/mpdecision \
     $(PATH_FILES)/bin/netmgrd:system/bin/netmgrd \
