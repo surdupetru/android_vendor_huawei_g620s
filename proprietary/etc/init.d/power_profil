@@ -1,0 +1,8 @@
+#!/system/bin/sh
+#
+# Switch power profiles on startup !
+#
+
+setprop sys.perf.profile 2
+
+setprop sys.perf.profile 1

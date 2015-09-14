@@ -113,6 +113,9 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/etc/firmware/venus.mdt:system/etc/firmware/venus.mdt
 
 PRODUCT_COPY_FILES += \
+    $(PATH_FILES)/etc/init.d/power_profil:system/etc/init.d/power_profil
+
+PRODUCT_COPY_FILES += \
     $(PATH_FILES)/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
     $(PATH_FILES)/etc/permissions/ims.xml:system/etc/permissions/ims.xml \
     $(PATH_FILES)/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
