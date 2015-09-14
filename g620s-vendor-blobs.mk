@@ -24,9 +24,6 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/bin/btnvtool:system/bin/btnvtool \
     $(PATH_FILES)/bin/dpmd:system/bin/dpmd \
     $(PATH_FILES)/bin/ds_fmc_appd:system/bin/ds_fmc_appd \
-    $(PATH_FILES)/bin/garden_app:system/bin/garden_app \
-    $(PATH_FILES)/bin/gps_check:system/bin/gps_check \
-    $(PATH_FILES)/bin/gpsone_daemon:system/bin/gpsone_daemon \
     $(PATH_FILES)/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     $(PATH_FILES)/bin/imsdatadaemon:system/bin/imsdatadaemon \
     $(PATH_FILES)/bin/imsqmidaemon:system/bin/imsqmidaemon \
@@ -38,8 +35,6 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/bin/iwlist:system/bin/iwlist \
     $(PATH_FILES)/bin/iwpriv:system/bin/iwpriv \
     $(PATH_FILES)/bin/location-mq:system/bin/location-mq \
-    $(PATH_FILES)/bin/loc_launcher:system/bin/loc_launcher \
-    $(PATH_FILES)/bin/lowi-server:system/bin/lowi-server \
     $(PATH_FILES)/bin/mm-qcamera-app:system/bin/mm-qcamera-app \
     $(PATH_FILES)/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
     $(PATH_FILES)/bin/mpdecision:system/bin/mpdecision \
@@ -67,9 +62,7 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/bin/usb_uicc_client:system/bin/usb_uicc_client \
     $(PATH_FILES)/bin/vm_bms:system/bin/vm_bms \
     $(PATH_FILES)/bin/wcnss_filter:system/bin/wcnss_filter \
-    $(PATH_FILES)/bin/wdsdaemon:system/bin/wdsdaemon \
-    $(PATH_FILES)/bin/xtwifi-client:system/bin/xtwifi-client \
-    $(PATH_FILES)/bin/xtwifi-inet-agent:system/bin/xtwifi-inet-agent
+    $(PATH_FILES)/bin/wdsdaemon:system/bin/wdsdaemon
 
 # Etc
 PRODUCT_COPY_FILES += \
@@ -120,29 +113,16 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/etc/firmware/venus.mdt:system/etc/firmware/venus.mdt
 
 PRODUCT_COPY_FILES += \
-    $(PATH_FILES)/etc/permissions/com.qualcomm.location.vzw_library.xml:system/etc/permissions/com.qualcomm.location.vzw_library.xml \
     $(PATH_FILES)/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
     $(PATH_FILES)/etc/permissions/ims.xml:system/etc/permissions/ims.xml \
     $(PATH_FILES)/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
     $(PATH_FILES)/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml
-
-PRODUCT_COPY_FILES += \
-    $(PATH_FILES)/etc/cacert_location.pem:system/etc/cacert_location.pem \
-    $(PATH_FILES)/etc/flp.conf:system/etc/flp.conf \
-    $(PATH_FILES)/etc/gps.conf:system/etc/gps.conf \
-    $(PATH_FILES)/etc/izat.conf:system/etc/izat.conf \
-    $(PATH_FILES)/etc/lowi.conf:system/etc/lowi.conf \
-    $(PATH_FILES)/etc/quipc.conf:system/etc/quipc.conf \
-    $(PATH_FILES)/etc/sap.conf:system/etc/sap.conf \
-    $(PATH_FILES)/etc/xtra_root_cert.pem:system/etc/xtra_root_cert.pem \
-    $(PATH_FILES)/etc/xtwifi.conf:system/etc/xtwifi.conf
 
 # Lib
 PRODUCT_COPY_FILES += \
     $(PATH_FILES)/lib/drm/libdrmhwomavoneplugin.so:system/lib/drm/libdrmhwomavoneplugin.so
 
 PRODUCT_COPY_FILES += \
-    $(PATH_FILES)/lib/hw/gps.default.so:system/lib/hw/gps.msm8916.so \
     $(PATH_FILES)/lib/hw/sensors.msm8916.so:system/lib/hw/sensors.msm8916.so
 
 PRODUCT_COPY_FILES += \
@@ -150,13 +130,9 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/lib/libcutils.so:system/lib/libcutils.so \
     $(PATH_FILES)/lib/libcutilz.so:system/lib/libcutilz.so \
     $(PATH_FILES)/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
-    $(PATH_FILES)/lib/libgps.utils.so:system/lib/libgps.utils.so \
     $(PATH_FILES)/lib/libhwnv.so:system/lib/libhwnv.so \
     $(PATH_FILES)/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
-    $(PATH_FILES)/lib/libloc_core.so:system/lib/libloc_core.so \
     $(PATH_FILES)/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
-    $(PATH_FILES)/lib/libloc_eng.so:system/lib/libloc_eng.so \
-    $(PATH_FILES)/lib/libloc_xtra.so:system/lib/libloc_xtra.so \
     $(PATH_FILES)/lib/libmdmdetect.so:system/lib/libmdmdetect.so \
     $(PATH_FILES)/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
     $(PATH_FILES)/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
@@ -700,7 +676,6 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
     $(PATH_FILES)/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
     $(PATH_FILES)/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
-    $(PATH_FILES)/vendor/lib/libloc_ext.so:system/vendor/lib/libloc_ext.so \
     $(PATH_FILES)/vendor/lib/liblowi_client.so:system/vendor/lib/liblowi_client.so \
     $(PATH_FILES)/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
     $(PATH_FILES)/vendor/lib/libmmipl.so:system/vendor/lib/libmmipl.so \
@@ -769,7 +744,6 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
     $(PATH_FILES)/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
     $(PATH_FILES)/vendor/lib/libxtadapter.so:system/vendor/lib/libxtadapter.so \
-    $(PATH_FILES)/vendor/lib/libxt_native.so:system/vendor/lib/libxt_native.so \
     $(PATH_FILES)/vendor/lib/libxtwifi_ulp_adaptor.so:system/vendor/lib/libxtwifi_ulp_adaptor.so \
     $(PATH_FILES)/vendor/lib/libxtwifi_zpp_adaptor.so:system/vendor/lib/libxtwifi_zpp_adaptor.so
 
