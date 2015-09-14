@@ -40,7 +40,6 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/bin/location-mq:system/bin/location-mq \
     $(PATH_FILES)/bin/loc_launcher:system/bin/loc_launcher \
     $(PATH_FILES)/bin/lowi-server:system/bin/lowi-server \
-    $(PATH_FILES)/bin/mm-pp-daemon:system/bin/mm-pp-daemon \
     $(PATH_FILES)/bin/mm-qcamera-app:system/bin/mm-qcamera-app \
     $(PATH_FILES)/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
     $(PATH_FILES)/bin/mpdecision:system/bin/mpdecision \
@@ -158,6 +157,7 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
     $(PATH_FILES)/lib/libloc_eng.so:system/lib/libloc_eng.so \
     $(PATH_FILES)/lib/libloc_xtra.so:system/lib/libloc_xtra.so \
+    $(PATH_FILES)/lib/libmdmdetect.so:system/lib/libmdmdetect.so \
     $(PATH_FILES)/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
     $(PATH_FILES)/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
     $(PATH_FILES)/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
@@ -668,7 +668,6 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libCommandSvc.so:system/vendor/lib/libCommandSvc.so \
     $(PATH_FILES)/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
     $(PATH_FILES)/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
-    $(PATH_FILES)/vendor/lib/libdisp-aba.so:system/vendor/lib/libdisp-aba.so \
     $(PATH_FILES)/vendor/lib/libDivxDrm.so:system/vendor/lib/libDivxDrm.so \
     $(PATH_FILES)/vendor/lib/lib-dplmedia.so:system/vendor/lib/lib-dplmedia.so \
     $(PATH_FILES)/vendor/lib/libdpmctmgr.so:system/vendor/lib/libdpmctmgr.so \
@@ -703,8 +702,6 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
     $(PATH_FILES)/vendor/lib/libloc_ext.so:system/vendor/lib/libloc_ext.so \
     $(PATH_FILES)/vendor/lib/liblowi_client.so:system/vendor/lib/liblowi_client.so \
-    $(PATH_FILES)/vendor/lib/libmm-abl.so:system/vendor/lib/libmm-abl.so \
-    $(PATH_FILES)/vendor/lib/libmm-abl-oem.so:system/vendor/lib/libmm-abl-oem.so \
     $(PATH_FILES)/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
     $(PATH_FILES)/vendor/lib/libmmipl.so:system/vendor/lib/libmmipl.so \
     $(PATH_FILES)/vendor/lib/libmmjpeg.so:system/vendor/lib/libmmjpeg.so \

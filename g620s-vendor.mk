@@ -23,7 +23,6 @@ PRODUCT_PACKAGES += \
     qcnvitems \
     qcrilhook \
     libHevcSwDecoder \
-    libtime_genoff \
-    libmdmdetect
+    libtime_genoff
 
 $(call inherit-product, vendor/huawei/g620s/g620s-vendor-blobs.mk)
