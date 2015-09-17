@@ -148,8 +148,7 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/lib/libqomx_core.so:system/lib/libqomx_core.so \
     $(PATH_FILES)/lib/libril.so:system/lib/libril.so \
     $(PATH_FILES)/lib/librmnetctl.so:system/lib/librmnetctl.so \
-    $(PATH_FILES)/lib/libtinyxml2.so:system/lib/libtinyxml2.so \
-    $(PATH_FILES)/lib/libWVphoneAPI.so:system/lib/libWVphoneAPI.so
+    $(PATH_FILES)/lib/libtinyxml2.so:system/lib/libtinyxml2.so
 
 # Vendor
 PRODUCT_COPY_FILES += \
