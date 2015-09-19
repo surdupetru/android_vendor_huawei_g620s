@@ -19,62 +19,34 @@ PATH_FILES := vendor/huawei/g620s/proprietary
 # Bin
 PRODUCT_COPY_FILES += \
     $(PATH_FILES)/bin/adsprpcd:system/bin/adsprpcd \
-    $(PATH_FILES)/bin/ATFWD-daemon:system/bin/ATFWD-daemon \
-    $(PATH_FILES)/bin/bridgemgrd:system/bin/bridgemgrd \
     $(PATH_FILES)/bin/btnvtool:system/bin/btnvtool \
-    $(PATH_FILES)/bin/dpmd:system/bin/dpmd \
-    $(PATH_FILES)/bin/ds_fmc_appd:system/bin/ds_fmc_appd \
     $(PATH_FILES)/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
-    $(PATH_FILES)/bin/imsdatadaemon:system/bin/imsdatadaemon \
-    $(PATH_FILES)/bin/imsqmidaemon:system/bin/imsqmidaemon \
-    $(PATH_FILES)/bin/ims_rtp_daemon:system/bin/ims_rtp_daemon \
-    $(PATH_FILES)/bin/iperf:system/bin/iperf \
     $(PATH_FILES)/bin/irsc_util:system/bin/irsc_util \
-    $(PATH_FILES)/bin/iw:system/bin/iw \
-    $(PATH_FILES)/bin/iwconfig:system/bin/iwconfig \
-    $(PATH_FILES)/bin/iwlist:system/bin/iwlist \
-    $(PATH_FILES)/bin/iwpriv:system/bin/iwpriv \
     $(PATH_FILES)/bin/location-mq:system/bin/location-mq \
-    $(PATH_FILES)/bin/mm-qcamera-app:system/bin/mm-qcamera-app \
+    $(PATH_FILES)/bin/mm-pp-daemon:system/bin/mm-pp-daemon \
     $(PATH_FILES)/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
     $(PATH_FILES)/bin/mpdecision:system/bin/mpdecision \
+    $(PATH_FILES)/bin/msm_irqbalance:system/bin/msm_irqbalance \
     $(PATH_FILES)/bin/netmgrd:system/bin/netmgrd \
-    $(PATH_FILES)/bin/oeminfo_server:system/bin/oeminfo_server \
-    $(PATH_FILES)/bin/port-bridge:system/bin/port-bridge \
-    $(PATH_FILES)/bin/ptt_socket_app:system/bin/ptt_socket_app \
-    $(PATH_FILES)/bin/qcom-system-daemon:system/bin/qcom-system-daemon \
-    $(PATH_FILES)/bin/qmiproxy:system/bin/qmiproxy \
     $(PATH_FILES)/bin/qmuxd:system/bin/qmuxd \
     $(PATH_FILES)/bin/qseecomd:system/bin/qseecomd \
     $(PATH_FILES)/bin/radish:system/bin/radish \
     $(PATH_FILES)/bin/rfs_access:system/bin/rfs_access \
-    $(PATH_FILES)/bin/rild:system/bin/rild \
-    $(PATH_FILES)/bin/rmnetcli:system/bin/rmnetcli \
     $(PATH_FILES)/bin/rmt_oeminfo:system/bin/rmt_oeminfo \
     $(PATH_FILES)/bin/rmt_storage:system/bin/rmt_storage \
-    $(PATH_FILES)/bin/subsystem_ramdump:system/bin/subsystem_ramdump \
     $(PATH_FILES)/bin/test_diag:system/bin/test_diag \
-    $(PATH_FILES)/bin/test_oeminfo:system/bin/test_oeminfo \
     $(PATH_FILES)/bin/thermal-engine:system/bin/thermal-engine \
     $(PATH_FILES)/bin/time_daemon:system/bin/time_daemon \
-    $(PATH_FILES)/bin/usbhub:system/bin/usbhub \
-    $(PATH_FILES)/bin/usbhub_init:system/bin/usbhub_init \
-    $(PATH_FILES)/bin/usb_uicc_client:system/bin/usb_uicc_client \
-    $(PATH_FILES)/bin/vm_bms:system/bin/vm_bms \
-    $(PATH_FILES)/bin/wcnss_filter:system/bin/wcnss_filter \
-    $(PATH_FILES)/bin/wdsdaemon:system/bin/wdsdaemon
+    $(PATH_FILES)/bin/vm_bms:system/bin/vm_bms
 
 # Etc
 PRODUCT_COPY_FILES += \
-    $(PATH_FILES)/etc/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
-    $(PATH_FILES)/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
-    $(PATH_FILES)/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
+    $(PATH_FILES)/etc/data/dsi_config.xml:system/etc/data/dsi_config.xml \
+    $(PATH_FILES)/etc/data/netmgr_config.xml:system/etc/data/netmgr_config.xml
+
+PRODUCT_COPY_FILES += \
     $(PATH_FILES)/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
     $(PATH_FILES)/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
-    $(PATH_FILES)/etc/firmware/a330_pfp.fw:system/etc/firmware/a330_pfp.fw \
-    $(PATH_FILES)/etc/firmware/a330_pm4.fw:system/etc/firmware/a330_pm4.fw \
-    $(PATH_FILES)/etc/firmware/a420_pfp.fw:system/etc/firmware/a420_pfp.fw \
-    $(PATH_FILES)/etc/firmware/a420_pm4.fw:system/etc/firmware/a420_pm4.fw \
     $(PATH_FILES)/etc/firmware/cherry_gis_fw.img:system/etc/firmware/cherry_gis_fw.img \
     $(PATH_FILES)/etc/firmware/cherry_ofilm_fw.img:system/etc/firmware/cherry_ofilm_fw.img \
     $(PATH_FILES)/etc/firmware/cherry_yassy_fw.img:system/etc/firmware/cherry_yassy_fw.img \
@@ -93,13 +65,11 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/etc/firmware/g760-HB3748B8EBC_XWD_SDI.fw:system/etc/firmware/g760-HB3748B8EBC_XWD_SDI.fw \
     $(PATH_FILES)/etc/firmware/g760L_lensone_fw.img:system/etc/firmware/g760L_lensone_fw.img \
     $(PATH_FILES)/etc/firmware/g760L_ofilm_fw.img:system/etc/firmware/g760L_ofilm_fw.img \
-    $(PATH_FILES)/etc/firmware/goodix_fw_g620S.bin:system/etc/firmware/goodix_fw_g620S.bin \
     $(PATH_FILES)/etc/firmware/goodix_new_ofilm_fw.bin:system/etc/firmware/goodix_new_ofilm_fw.bin \
     $(PATH_FILES)/etc/firmware/goodix_ofilm_fw.bin:system/etc/firmware/goodix_ofilm_fw.bin \
     $(PATH_FILES)/etc/firmware/ice40.bin:system/etc/firmware/ice40.bin \
     $(PATH_FILES)/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
     $(PATH_FILES)/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
-    $(PATH_FILES)/etc/firmware/nfc_test.bin:system/etc/firmware/nfc_test.bin \
     $(PATH_FILES)/etc/firmware/Signedrompatch_v20.bin:system/etc/firmware/Signedrompatch_v20.bin \
     $(PATH_FILES)/etc/firmware/Signedrompatch_v21.bin:system/etc/firmware/Signedrompatch_v21.bin \
     $(PATH_FILES)/etc/firmware/Signedrompatch_v24.bin:system/etc/firmware/Signedrompatch_v24.bin \
@@ -113,52 +83,28 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/etc/firmware/venus.mdt:system/etc/firmware/venus.mdt
 
 PRODUCT_COPY_FILES += \
-    $(PATH_FILES)/etc/init.d/power_profil:system/etc/init.d/power_profil
-
-PRODUCT_COPY_FILES += \
     $(PATH_FILES)/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
-    $(PATH_FILES)/etc/permissions/ims.xml:system/etc/permissions/ims.xml \
     $(PATH_FILES)/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
     $(PATH_FILES)/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml
 
 # Lib
 PRODUCT_COPY_FILES += \
-    $(PATH_FILES)/lib/drm/libdrmhwomavoneplugin.so:system/lib/drm/libdrmhwomavoneplugin.so
-
-PRODUCT_COPY_FILES += \
     $(PATH_FILES)/lib/hw/sensors.msm8916.so:system/lib/hw/sensors.msm8916.so
 
 PRODUCT_COPY_FILES += \
     $(PATH_FILES)/lib/libchromatix_imx135_liveshot.so:system/lib/libchromatix_imx135_liveshot.so \
-    $(PATH_FILES)/lib/libcutils.so:system/lib/libcutils.so \
     $(PATH_FILES)/lib/libcutilz.so:system/lib/libcutilz.so \
     $(PATH_FILES)/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
-    $(PATH_FILES)/lib/libhwnv.so:system/lib/libhwnv.so \
-    $(PATH_FILES)/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
-    $(PATH_FILES)/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
-    $(PATH_FILES)/lib/libmdmdetect.so:system/lib/libmdmdetect.so \
     $(PATH_FILES)/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
-    $(PATH_FILES)/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
     $(PATH_FILES)/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
     $(PATH_FILES)/lib/liboeminfo.so:system/lib/liboeminfo.so \
-    $(PATH_FILES)/lib/liboeminfo_oem_api.so:system/lib/liboeminfo_oem_api.so \
-    $(PATH_FILES)/lib/libqmi_nv_api.so:system/lib/libqmi_nv_api.so \
-    $(PATH_FILES)/lib/libqmi_oem_api.so:system/lib/libqmi_oem_api.so \
-    $(PATH_FILES)/lib/libqmi_oem_svc.so:system/lib/libqmi_oem_svc.so \
-    $(PATH_FILES)/lib/libqomx_core.so:system/lib/libqomx_core.so \
-    $(PATH_FILES)/lib/libril.so:system/lib/libril.so \
-    $(PATH_FILES)/lib/librmnetctl.so:system/lib/librmnetctl.so \
-    $(PATH_FILES)/lib/libtinyxml2.so:system/lib/libtinyxml2.so
+    $(PATH_FILES)/lib/librmnetctl.so:system/lib/librmnetctl.so
 
 # Vendor
-PRODUCT_COPY_FILES += \
-    $(PATH_FILES)/vendor/bin/audioflacapp:system/vendor/bin/audioflacapp
-
 PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/etc/calmodule.cfg:system/vendor/etc/calmodule.cfg
 
 PRODUCT_COPY_FILES += \
-    $(PATH_FILES)/vendor/lib/drm/libdrmprplugin.so:system/vendor/lib/drm/libdrmprplugin.so \
     $(PATH_FILES)/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so
 
 PRODUCT_COPY_FILES += \
@@ -627,51 +573,34 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libmmcamera_wavelet_lib.so:system/vendor/lib/libmmcamera_wavelet_lib.so
 
 PRODUCT_COPY_FILES += \
+    $(PATH_FILES)/vendor/lib/libacdb-fts.so:system/vendor/lib/libacdb-fts.so \
     $(PATH_FILES)/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
-    $(PATH_FILES)/vendor/lib/libacdbmapper.so:system/vendor/lib/libacdbmapper.so \
     $(PATH_FILES)/vendor/lib/libacdbrtac.so:system/vendor/lib/libacdbrtac.so \
     $(PATH_FILES)/vendor/lib/libadiertac.so:system/vendor/lib/libadiertac.so \
     $(PATH_FILES)/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
     $(PATH_FILES)/vendor/lib/libadsprpc.so:system/vendor/lib/libadsprpc.so \
-    $(PATH_FILES)/vendor/lib/libalarmservice_jni.so:system/vendor/lib/libalarmservice_jni.so \
     $(PATH_FILES)/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
-    $(PATH_FILES)/vendor/lib/libaudioalsa.so:system/vendor/lib/libaudioalsa.so \
     $(PATH_FILES)/vendor/lib/libbtnv.so:system/vendor/lib/libbtnv.so \
     $(PATH_FILES)/vendor/lib/libc2d30-a3xx.so:system/vendor/lib/libc2d30-a3xx.so \
-    $(PATH_FILES)/vendor/lib/libc2d30-a4xx.so:system/vendor/lib/libc2d30-a4xx.so \
     $(PATH_FILES)/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
     $(PATH_FILES)/vendor/lib/libcalmodule_akm.so:system/vendor/lib/libcalmodule_akm.so \
     $(PATH_FILES)/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
     $(PATH_FILES)/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
-    $(PATH_FILES)/vendor/lib/libCommandSvc.so:system/vendor/lib/libCommandSvc.so \
     $(PATH_FILES)/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
     $(PATH_FILES)/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
+    $(PATH_FILES)/vendor/lib/libdisp-aba.so:system/vendor/lib/libdisp-aba.so \
     $(PATH_FILES)/vendor/lib/libDivxDrm.so:system/vendor/lib/libDivxDrm.so \
-    $(PATH_FILES)/vendor/lib/lib-dplmedia.so:system/vendor/lib/lib-dplmedia.so \
-    $(PATH_FILES)/vendor/lib/libdpmctmgr.so:system/vendor/lib/libdpmctmgr.so \
-    $(PATH_FILES)/vendor/lib/libdpmfdmgr.so:system/vendor/lib/libdpmfdmgr.so \
-    $(PATH_FILES)/vendor/lib/libdpmframework.so:system/vendor/lib/libdpmframework.so \
     $(PATH_FILES)/vendor/lib/libdrmfs.so:system/vendor/lib/libdrmfs.so \
     $(PATH_FILES)/vendor/lib/libdrmtime.so:system/vendor/lib/libdrmtime.so \
     $(PATH_FILES)/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
-    $(PATH_FILES)/vendor/lib/libdsnetutils.so:system/vendor/lib/libdsnetutils.so \
     $(PATH_FILES)/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
     $(PATH_FILES)/vendor/lib/libExtendedExtractor.so:system/vendor/lib/libExtendedExtractor.so \
     $(PATH_FILES)/vendor/lib/libfastcvopt.so:system/vendor/lib/libfastcvopt.so \
-    $(PATH_FILES)/vendor/lib/libFileMux.so:system/vendor/lib/libFileMux.so \
     $(PATH_FILES)/vendor/lib/libFlacSwDec.so:system/vendor/lib/libFlacSwDec.so \
     $(PATH_FILES)/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     $(PATH_FILES)/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
     $(PATH_FILES)/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
     $(PATH_FILES)/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
-    $(PATH_FILES)/vendor/lib/lib-imscamera.so:system/vendor/lib/lib-imscamera.so \
-    $(PATH_FILES)/vendor/lib/lib-imsdpl.so:system/vendor/lib/lib-imsdpl.so \
-    $(PATH_FILES)/vendor/lib/lib-imsqimf.so:system/vendor/lib/lib-imsqimf.so \
-    $(PATH_FILES)/vendor/lib/lib-imsrcs.so:system/vendor/lib/lib-imsrcs.so \
-    $(PATH_FILES)/vendor/lib/lib-imss.so:system/vendor/lib/lib-imss.so \
-    $(PATH_FILES)/vendor/lib/lib-imsSDP.so:system/vendor/lib/lib-imsSDP.so \
-    $(PATH_FILES)/vendor/lib/lib-imsvt.so:system/vendor/lib/lib-imsvt.so \
-    $(PATH_FILES)/vendor/lib/lib-imsxml.so:system/vendor/lib/lib-imsxml.so \
     $(PATH_FILES)/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
     $(PATH_FILES)/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so \
     $(PATH_FILES)/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so \
@@ -679,29 +608,23 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
     $(PATH_FILES)/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
     $(PATH_FILES)/vendor/lib/liblowi_client.so:system/vendor/lib/liblowi_client.so \
+    $(PATH_FILES)/vendor/lib/libmdmdetect.so:system/vendor/lib/libmdmdetect.so \
+    $(PATH_FILES)/vendor/lib/libmm-abl-oem.so:system/vendor/lib/libmm-abl-oem.so \
     $(PATH_FILES)/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
     $(PATH_FILES)/vendor/lib/libmmipl.so:system/vendor/lib/libmmipl.so \
     $(PATH_FILES)/vendor/lib/libmmjpeg.so:system/vendor/lib/libmmjpeg.so \
     $(PATH_FILES)/vendor/lib/libmmosal.so:system/vendor/lib/libmmosal.so \
     $(PATH_FILES)/vendor/lib/libmmparser.so:system/vendor/lib/libmmparser.so \
     $(PATH_FILES)/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
-    $(PATH_FILES)/vendor/lib/libmmrtpdecoder.so:system/vendor/lib/libmmrtpdecoder.so \
-    $(PATH_FILES)/vendor/lib/libmmrtpencoder.so:system/vendor/lib/libmmrtpencoder.so \
     $(PATH_FILES)/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \
-    $(PATH_FILES)/vendor/lib/libNimsWrap.so:system/vendor/lib/libNimsWrap.so \
     $(PATH_FILES)/vendor/lib/liboemcamera.so:system/vendor/lib/liboemcamera.so \
     $(PATH_FILES)/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
-    $(PATH_FILES)/vendor/lib/libomx_amrdec_sharedlibrary.so:system/vendor/lib/libomx_amrdec_sharedlibrary.so \
-    $(PATH_FILES)/vendor/lib/libomx_amrenc_sharedlibrary.so:system/vendor/lib/libomx_amrenc_sharedlibrary.so \
     $(PATH_FILES)/vendor/lib/libOmxEvrcDec.so:system/vendor/lib/libOmxEvrcDec.so \
-    $(PATH_FILES)/vendor/lib/libOmxMux.so:system/vendor/lib/libOmxMux.so \
     $(PATH_FILES)/vendor/lib/libOmxQcelp13Dec.so:system/vendor/lib/libOmxQcelp13Dec.so \
-    $(PATH_FILES)/vendor/lib/libomx_sharedlibrary.so:system/vendor/lib/libomx_sharedlibrary.so \
     $(PATH_FILES)/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
-    $(PATH_FILES)/vendor/lib/libprdrmdecrypt.so:system/vendor/lib/libprdrmdecrypt.so \
+    $(PATH_FILES)/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so \
     $(PATH_FILES)/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
     $(PATH_FILES)/vendor/lib/libqc-opt.so:system/vendor/lib/libqc-opt.so \
-    $(PATH_FILES)/vendor/lib/libqct_resampler.so:system/vendor/lib/libqct_resampler.so \
     $(PATH_FILES)/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \
     $(PATH_FILES)/vendor/lib/libqdp.so:system/vendor/lib/libqdp.so \
     $(PATH_FILES)/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
@@ -710,7 +633,6 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libqmi_client_qmux.so:system/vendor/lib/libqmi_client_qmux.so \
     $(PATH_FILES)/vendor/lib/libqmi_common_so.so:system/vendor/lib/libqmi_common_so.so \
     $(PATH_FILES)/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
-    $(PATH_FILES)/vendor/lib/libqmi_csvt_srvc.so:system/vendor/lib/libqmi_csvt_srvc.so \
     $(PATH_FILES)/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
     $(PATH_FILES)/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
     $(PATH_FILES)/vendor/lib/libqomx_jpegdec.so:system/vendor/lib/libqomx_jpegdec.so \
@@ -718,30 +640,23 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
     $(PATH_FILES)/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
     $(PATH_FILES)/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \
-    $(PATH_FILES)/vendor/lib/lib-rcsimssjni.so:system/vendor/lib/lib-rcsimssjni.so \
-    $(PATH_FILES)/vendor/lib/lib-rcsjni.so:system/vendor/lib/lib-rcsjni.so \
     $(PATH_FILES)/vendor/lib/libril-qc-qmi-1.so:system/vendor/lib/libril-qc-qmi-1.so \
     $(PATH_FILES)/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
     $(PATH_FILES)/vendor/lib/librpmb.so:system/vendor/lib/librpmb.so \
+    $(PATH_FILES)/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
+    $(PATH_FILES)/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
     $(PATH_FILES)/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
-    $(PATH_FILES)/vendor/lib/lib-rtpcommon.so:system/vendor/lib/lib-rtpcommon.so \
-    $(PATH_FILES)/vendor/lib/lib-rtpcore.so:system/vendor/lib/lib-rtpcore.so \
-    $(PATH_FILES)/vendor/lib/lib-rtpdaemoninterface.so:system/vendor/lib/lib-rtpdaemoninterface.so \
-    $(PATH_FILES)/vendor/lib/lib-rtpsl.so:system/vendor/lib/lib-rtpsl.so \
     $(PATH_FILES)/vendor/lib/libsc-a2xx.so:system/vendor/lib/libsc-a2xx.so \
     $(PATH_FILES)/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so \
     $(PATH_FILES)/vendor/lib/libscale.so:system/vendor/lib/libscale.so \
-    $(PATH_FILES)/vendor/lib/libscve.so:system/vendor/lib/libscve.so \
     $(PATH_FILES)/vendor/lib/libSHIMDivxDrm.so:system/vendor/lib/libSHIMDivxDrm.so \
-    $(PATH_FILES)/vendor/lib/libsrsprocessing.so:system/vendor/lib/libsrsprocessing.so \
+    $(PATH_FILES)/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so \
     $(PATH_FILES)/vendor/lib/libssd.so:system/vendor/lib/libssd.so \
+    $(PATH_FILES)/vendor/lib/libsystem_health_mon.so:system/vendor/lib/libsystem_health_mon.so \
     $(PATH_FILES)/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
     $(PATH_FILES)/vendor/lib/libthermalioctl.so:system/vendor/lib/libthermalioctl.so \
     $(PATH_FILES)/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
-    $(PATH_FILES)/vendor/lib/libtzplayready.so:system/vendor/lib/libtzplayready.so \
     $(PATH_FILES)/vendor/lib/libulp2.so:system/vendor/lib/libulp2.so \
-    $(PATH_FILES)/vendor/lib/libvoice-svc.so:system/vendor/lib/libvoice-svc.so \
-    $(PATH_FILES)/vendor/lib/libwifiscanner.so:system/vendor/lib/libwifiscanner.so \
     $(PATH_FILES)/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
     $(PATH_FILES)/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
     $(PATH_FILES)/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
@@ -749,11 +664,3 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libxtadapter.so:system/vendor/lib/libxtadapter.so \
     $(PATH_FILES)/vendor/lib/libxtwifi_ulp_adaptor.so:system/vendor/lib/libxtwifi_ulp_adaptor.so \
     $(PATH_FILES)/vendor/lib/libxtwifi_zpp_adaptor.so:system/vendor/lib/libxtwifi_zpp_adaptor.so
-
-PRODUCT_COPY_FILES += \
-    $(PATH_FILES)/vendor/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd \
-    $(PATH_FILES)/vendor/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd
-
-# Xbin
-PRODUCT_COPY_FILES += \
-    $(PATH_FILES)/xbin/qlogd:system/xbin/qlogd
