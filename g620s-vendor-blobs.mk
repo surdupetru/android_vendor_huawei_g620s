@@ -93,7 +93,8 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
     $(PATH_FILES)/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
     $(PATH_FILES)/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
-    $(PATH_FILES)/lib/liboeminfo.so:system/lib/liboeminfo.so
+    $(PATH_FILES)/lib/liboeminfo.so:system/lib/liboeminfo.so \
+    $(PATH_FILES)/lib/librmnetctl.so:system/lib/librmnetctl.so
 
 PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so
