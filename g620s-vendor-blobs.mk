@@ -87,22 +87,12 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
     $(PATH_FILES)/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml
 
-# Lib
-PRODUCT_COPY_FILES += \
-    $(PATH_FILES)/lib/hw/sensors.msm8916.so:system/lib/hw/sensors.msm8916.so
-
 PRODUCT_COPY_FILES += \
     $(PATH_FILES)/lib/libchromatix_imx135_liveshot.so:system/lib/libchromatix_imx135_liveshot.so \
     $(PATH_FILES)/lib/libcutilz.so:system/lib/libcutilz.so \
     $(PATH_FILES)/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
     $(PATH_FILES)/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
-    $(PATH_FILES)/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
-    $(PATH_FILES)/lib/liboeminfo.so:system/lib/liboeminfo.so \
-    $(PATH_FILES)/lib/librmnetctl.so:system/lib/librmnetctl.so
-
-# Vendor
-PRODUCT_COPY_FILES += \
-    $(PATH_FILES)/vendor/etc/calmodule.cfg:system/vendor/etc/calmodule.cfg
+    $(PATH_FILES)/lib/liboeminfo.so:system/lib/liboeminfo.so
 
 PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so
@@ -583,7 +573,6 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libbtnv.so:system/vendor/lib/libbtnv.so \
     $(PATH_FILES)/vendor/lib/libc2d30-a3xx.so:system/vendor/lib/libc2d30-a3xx.so \
     $(PATH_FILES)/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
-    $(PATH_FILES)/vendor/lib/libcalmodule_akm.so:system/vendor/lib/libcalmodule_akm.so \
     $(PATH_FILES)/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
     $(PATH_FILES)/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
     $(PATH_FILES)/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
