@@ -87,6 +87,9 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
     $(PATH_FILES)/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml
 
+PRODUCT_COPY_FILES += \
+    $(PATH_FILES)/etc/spn-conf.xml:system/etc/spn-conf.xml
+
 # Lib
 PRODUCT_COPY_FILES += \
     $(PATH_FILES)/lib/hw/sensors.msm8916.so:system/lib/hw/sensors.msm8916.so
