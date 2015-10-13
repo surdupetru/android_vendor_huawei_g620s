@@ -71,6 +71,7 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/etc/firmware/ice40.bin:system/etc/firmware/ice40.bin \
     $(PATH_FILES)/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
     $(PATH_FILES)/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
+    $(PATH_FILES)/etc/firmware/nfc_test.bin:system/etc/firmware/nfc_test.bin \
     $(PATH_FILES)/etc/firmware/Signedrompatch_v20.bin:system/etc/firmware/Signedrompatch_v20.bin \
     $(PATH_FILES)/etc/firmware/Signedrompatch_v21.bin:system/etc/firmware/Signedrompatch_v21.bin \
     $(PATH_FILES)/etc/firmware/Signedrompatch_v24.bin:system/etc/firmware/Signedrompatch_v24.bin \
@@ -123,15 +124,11 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so
 
 PRODUCT_COPY_FILES += \
+    $(PATH_FILES)/vendor/lib/hw/nfc_nci.msm8916.so:system/vendor/lib/hw/nfc_nci.msm8916.so \
     $(PATH_FILES)/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so
 
 PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
-
-PRODUCT_COPY_FILES += \
-    $(PATH_FILES)/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so \
-    $(PATH_FILES)/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so \
-    $(PATH_FILES)/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so
 
 # Actuator
 PRODUCT_COPY_FILES += \
@@ -581,7 +578,6 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libmmcamera_wavelet_lib.so:system/vendor/lib/libmmcamera_wavelet_lib.so
 
 PRODUCT_COPY_FILES += \
-    $(PATH_FILES)/vendor/lib/libacdb-fts.so:system/vendor/lib/libacdb-fts.so \
     $(PATH_FILES)/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
     $(PATH_FILES)/vendor/lib/libacdbrtac.so:system/vendor/lib/libacdbrtac.so \
     $(PATH_FILES)/vendor/lib/libadiertac.so:system/vendor/lib/libadiertac.so \
@@ -606,7 +602,6 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
     $(PATH_FILES)/vendor/lib/libExtendedExtractor.so:system/vendor/lib/libExtendedExtractor.so \
     $(PATH_FILES)/vendor/lib/libfastcvopt.so:system/vendor/lib/libfastcvopt.so \
-    $(PATH_FILES)/vendor/lib/libFlacSwDec.so:system/vendor/lib/libFlacSwDec.so \
     $(PATH_FILES)/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     $(PATH_FILES)/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
     $(PATH_FILES)/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
@@ -627,6 +622,8 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libmmparser.so:system/vendor/lib/libmmparser.so \
     $(PATH_FILES)/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
     $(PATH_FILES)/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \
+    $(PATH_FILES)/vendor/lib/libnfcD-nci.so:system/vendor/lib/libnfcD-nci.so \
+    $(PATH_FILES)/vendor/lib/libnfcD_nci_jni.so:system/vendor/lib/libnfcD_nci_jni.so \
     $(PATH_FILES)/vendor/lib/liboemcamera.so:system/vendor/lib/liboemcamera.so \
     $(PATH_FILES)/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
     $(PATH_FILES)/vendor/lib/libOmxEvrcDec.so:system/vendor/lib/libOmxEvrcDec.so \
@@ -674,3 +671,6 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libxtadapter.so:system/vendor/lib/libxtadapter.so \
     $(PATH_FILES)/vendor/lib/libxtwifi_ulp_adaptor.so:system/vendor/lib/libxtwifi_ulp_adaptor.so \
     $(PATH_FILES)/vendor/lib/libxtwifi_zpp_adaptor.so:system/vendor/lib/libxtwifi_zpp_adaptor.so
+
+PRODUCT_COPY_FILES += \
+    $(PATH_FILES)/bin/vm_bms:recovery/root/sbin/vm_bms
