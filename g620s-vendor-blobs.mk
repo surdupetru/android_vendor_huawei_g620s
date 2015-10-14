@@ -26,9 +26,8 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/bin/location-mq:system/bin/location-mq \
     $(PATH_FILES)/bin/mm-pp-daemon:system/bin/mm-pp-daemon \
     $(PATH_FILES)/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
-    $(PATH_FILES)/bin/mpdecision:system/bin/mpdecision \
-    $(PATH_FILES)/bin/msm_irqbalance:system/bin/msm_irqbalance \
     $(PATH_FILES)/bin/netmgrd:system/bin/netmgrd \
+    $(PATH_FILES)/bin/perfd:system/bin/perfd \
     $(PATH_FILES)/bin/qmuxd:system/bin/qmuxd \
     $(PATH_FILES)/bin/qseecomd:system/bin/qseecomd \
     $(PATH_FILES)/bin/radish:system/bin/radish \
@@ -91,6 +90,10 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     $(PATH_FILES)/etc/spn-conf.xml:system/etc/spn-conf.xml
+
+PRODUCT_COPY_FILES += \
+    $(PATH_FILES)/framework/com.android.nfc.helper.jar:system/framework/com.android.nfc.helper.jar \
+    $(PATH_FILES)/framework/com.android.qcom.nfc_extras.jar:system/framework/com.android.qcom.nfc_extras.jar
 
 # Lib
 PRODUCT_COPY_FILES += \
@@ -645,7 +648,6 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libqomx_jpegdec.so:system/vendor/lib/libqomx_jpegdec.so \
     $(PATH_FILES)/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so \
     $(PATH_FILES)/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
-    $(PATH_FILES)/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
     $(PATH_FILES)/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \
     $(PATH_FILES)/vendor/lib/libril-qc-qmi-1.so:system/vendor/lib/libril-qc-qmi-1.so \
     $(PATH_FILES)/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
