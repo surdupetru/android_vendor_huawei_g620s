@@ -23,6 +23,14 @@ PRODUCT_PACKAGES += \
     TimeService
 
 PRODUCT_PACKAGES += \
+    cneapiclient \
+    com.android.nfc.helper \
+    com.android.qcom.nfc_extras \
+    com.qti.dpmframework \
+    com.quicinc.cne \
+    dpmapi
+
+PRODUCT_PACKAGES += \
     libmm-abl
 
 PRODUCT_PACKAGES += \

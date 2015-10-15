@@ -20,6 +20,8 @@ PATH_FILES := vendor/huawei/g620s/proprietary
 PRODUCT_COPY_FILES += \
     $(PATH_FILES)/bin/adsprpcd:system/bin/adsprpcd \
     $(PATH_FILES)/bin/btnvtool:system/bin/btnvtool \
+    $(PATH_FILES)/bin/cnd:system/bin/cnd \
+    $(PATH_FILES)/bin/dpmd:system/bin/dpmd \
     $(PATH_FILES)/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     $(PATH_FILES)/bin/irsc_util:system/bin/irsc_util \
     $(PATH_FILES)/bin/libqmi_oem_main:system/bin/libqmi_oem_main \
@@ -41,8 +43,16 @@ PRODUCT_COPY_FILES += \
 
 # Etc
 PRODUCT_COPY_FILES += \
+    $(PATH_FILES)/etc/cne/andsfCne.xml:system/etc/cne/andsfCne.xml \
+    $(PATH_FILES)/etc/cne/SwimConfig.xml:system/etc/cne/SwimConfig.xml
+
+PRODUCT_COPY_FILES += \
     $(PATH_FILES)/etc/data/dsi_config.xml:system/etc/data/dsi_config.xml \
     $(PATH_FILES)/etc/data/netmgr_config.xml:system/etc/data/netmgr_config.xml
+
+PRODUCT_COPY_FILES += \
+    $(PATH_FILES)/etc/dpm/dpm.xml:system/etc/dpm/dpm.xml \
+    $(PATH_FILES)/etc/dpm/nsrm/NsrmConfiguration.xml:system/etc/dpm/nsrm/NsrmConfiguration.xml
 
 PRODUCT_COPY_FILES += \
     $(PATH_FILES)/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
@@ -84,14 +94,13 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/etc/firmware/venus.mdt:system/etc/firmware/venus.mdt
 
 PRODUCT_COPY_FILES += \
-    $(PATH_FILES)/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml
+    $(PATH_FILES)/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
+    $(PATH_FILES)/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
+    $(PATH_FILES)/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
+    $(PATH_FILES)/etc/permissions/dpmapi.xml:system/etc/permissions/dpmapi.xml
 
 PRODUCT_COPY_FILES += \
     $(PATH_FILES)/etc/spn-conf.xml:system/etc/spn-conf.xml
-
-PRODUCT_COPY_FILES += \
-    $(PATH_FILES)/framework/com.android.nfc.helper.jar:system/framework/com.android.nfc.helper.jar \
-    $(PATH_FILES)/framework/com.android.qcom.nfc_extras.jar:system/framework/com.android.qcom.nfc_extras.jar
 
 # Lib
 PRODUCT_COPY_FILES += \
@@ -592,11 +601,18 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libcalmodule_common.so:system/vendor/lib/libcalmodule_common.so \
     $(PATH_FILES)/vendor/lib/libcalmodule_gyroscope.so:system/vendor/lib/libcalmodule_gyroscope.so \
     $(PATH_FILES)/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
+    $(PATH_FILES)/vendor/lib/libcne.so:system/vendor/lib/libcne.so \
     $(PATH_FILES)/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
+    $(PATH_FILES)/vendor/lib/libcneconn.so:system/vendor/lib/libcneconn.so \
+    $(PATH_FILES)/vendor/lib/libcneqmiutils.so.so:system/vendor/lib/libcneqmiutils.so \
     $(PATH_FILES)/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
     $(PATH_FILES)/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
     $(PATH_FILES)/vendor/lib/libdisp-aba.so:system/vendor/lib/libdisp-aba.so \
     $(PATH_FILES)/vendor/lib/libDivxDrm.so:system/vendor/lib/libDivxDrm.so \
+    $(PATH_FILES)/vendor/lib/libdpmctmgr.so:system/vendor/lib/libdpmctmgr.so \
+    $(PATH_FILES)/vendor/lib/libdpmfdmgr.so:system/vendor/lib/libdpmfdmgr.so \
+    $(PATH_FILES)/vendor/lib/libdpmframework.so:system/vendor/lib/libdframework.so \
+    $(PATH_FILES)/vendor/lib/libdpmnsrm.so:system/vendor/lib/libdpmnsrm.so \
     $(PATH_FILES)/vendor/lib/libdrmfs.so:system/vendor/lib/libdrmfs.so \
     $(PATH_FILES)/vendor/lib/libdrmtime.so:system/vendor/lib/libdrmtime.so \
     $(PATH_FILES)/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
@@ -614,6 +630,7 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
     $(PATH_FILES)/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
     $(PATH_FILES)/vendor/lib/liblowi_client.so:system/vendor/lib/liblowi_client.so \
+    $(PATH_FILES)/vendor/lib/libmasc.so:system/vendor/lib/libmasc.so \
     $(PATH_FILES)/vendor/lib/libmdmdetect.so:system/vendor/lib/libmdmdetect.so \
     $(PATH_FILES)/vendor/lib/libmm-abl-oem.so:system/vendor/lib/libmm-abl-oem.so \
     $(PATH_FILES)/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
@@ -625,6 +642,7 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \
     $(PATH_FILES)/vendor/lib/libnfcD-nci.so:system/vendor/lib/libnfcD-nci.so \
     $(PATH_FILES)/vendor/lib/libnfcD_nci_jni.so:system/vendor/lib/libnfcD_nci_jni.so \
+    $(PATH_FILES)/vendor/lib/libNimsWrap.so:system/vendor/lib/libNimsWrap.so \
     $(PATH_FILES)/vendor/lib/liboemcamera.so:system/vendor/lib/liboemcamera.so \
     $(PATH_FILES)/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
     $(PATH_FILES)/vendor/lib/libOmxEvrcDec.so:system/vendor/lib/libOmxEvrcDec.so \
@@ -664,6 +682,8 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libthermalioctl.so:system/vendor/lib/libthermalioctl.so \
     $(PATH_FILES)/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
     $(PATH_FILES)/vendor/lib/libulp2.so:system/vendor/lib/libulp2.so \
+    $(PATH_FILES)/vendor/lib/libvendorconn.so:system/vendor/lib/libvendorconn.so \
+    $(PATH_FILES)/vendor/lib/libwqe.so:system/vendor/lib/libwqe.so \
     $(PATH_FILES)/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
     $(PATH_FILES)/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
     $(PATH_FILES)/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
