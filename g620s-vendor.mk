@@ -20,13 +20,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     NfcDNci \
-    qcrilmsgtunnel \
-    shutdownlistener \
     TimeService
-
-PRODUCT_PACKAGES += \
-    qcnvitems \
-    qcrilhook
 
 PRODUCT_PACKAGES += \
     libmm-abl

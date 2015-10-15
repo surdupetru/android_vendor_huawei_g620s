@@ -84,9 +84,7 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/etc/firmware/venus.mdt:system/etc/firmware/venus.mdt
 
 PRODUCT_COPY_FILES += \
-    $(PATH_FILES)/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
-    $(PATH_FILES)/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
-    $(PATH_FILES)/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml
+    $(PATH_FILES)/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml
 
 PRODUCT_COPY_FILES += \
     $(PATH_FILES)/etc/spn-conf.xml:system/etc/spn-conf.xml
