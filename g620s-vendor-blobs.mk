@@ -604,7 +604,7 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libcne.so:system/vendor/lib/libcne.so \
     $(PATH_FILES)/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
     $(PATH_FILES)/vendor/lib/libcneconn.so:system/vendor/lib/libcneconn.so \
-    $(PATH_FILES)/vendor/lib/libcneqmiutils.so.so:system/vendor/lib/libcneqmiutils.so \
+    $(PATH_FILES)/vendor/lib/libcneqmiutils.so:system/vendor/lib/libcneqmiutils.so \
     $(PATH_FILES)/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
     $(PATH_FILES)/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
     $(PATH_FILES)/vendor/lib/libdisp-aba.so:system/vendor/lib/libdisp-aba.so \
