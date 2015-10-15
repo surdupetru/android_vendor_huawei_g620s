@@ -51,7 +51,7 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/etc/data/netmgr_config.xml:system/etc/data/netmgr_config.xml
 
 PRODUCT_COPY_FILES += \
-    $(PATH_FILES)/etc/dpm/dpm.xml:system/etc/dpm/dpm.xml \
+    $(PATH_FILES)/etc/dpm/dpm.conf:system/etc/dpm/dpm.conf \
     $(PATH_FILES)/etc/dpm/nsrm/NsrmConfiguration.xml:system/etc/dpm/nsrm/NsrmConfiguration.xml
 
 PRODUCT_COPY_FILES += \
