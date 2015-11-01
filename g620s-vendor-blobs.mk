@@ -80,7 +80,6 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/etc/firmware/ice40.bin:system/etc/firmware/ice40.bin \
     $(PATH_FILES)/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
     $(PATH_FILES)/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
-    $(PATH_FILES)/etc/firmware/nfc_test.bin:system/etc/firmware/nfc_test.bin \
     $(PATH_FILES)/etc/firmware/Signedrompatch_v20.bin:system/etc/firmware/Signedrompatch_v20.bin \
     $(PATH_FILES)/etc/firmware/Signedrompatch_v21.bin:system/etc/firmware/Signedrompatch_v21.bin \
     $(PATH_FILES)/etc/firmware/Signedrompatch_v24.bin:system/etc/firmware/Signedrompatch_v24.bin \
@@ -128,7 +127,6 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so
 
 PRODUCT_COPY_FILES += \
-    $(PATH_FILES)/vendor/lib/hw/nfc_nci.msm8916.so:system/vendor/lib/hw/nfc_nci.msm8916.so \
     $(PATH_FILES)/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so
 
 PRODUCT_COPY_FILES += \
@@ -631,8 +629,6 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libmmparser.so:system/vendor/lib/libmmparser.so \
     $(PATH_FILES)/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
     $(PATH_FILES)/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \
-    $(PATH_FILES)/vendor/lib/libnfcD-nci.so:system/vendor/lib/libnfcD-nci.so \
-    $(PATH_FILES)/vendor/lib/libnfcD_nci_jni.so:system/vendor/lib/libnfcD_nci_jni.so \
     $(PATH_FILES)/vendor/lib/libNimsWrap.so:system/vendor/lib/libNimsWrap.so \
     $(PATH_FILES)/vendor/lib/liboemcamera.so:system/vendor/lib/liboemcamera.so \
     $(PATH_FILES)/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \

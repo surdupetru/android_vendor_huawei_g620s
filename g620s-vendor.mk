@@ -19,13 +19,10 @@ PRODUCT_PACKAGES += \
     com.qualcomm.location
 
 PRODUCT_PACKAGES += \
-    NfcDNci \
     TimeService
 
 PRODUCT_PACKAGES += \
     cneapiclient \
-    com.android.nfc.helper \
-    com.android.qcom.nfc_extras \
     com.qti.dpmframework \
     com.quicinc.cne \
     dpmapi
