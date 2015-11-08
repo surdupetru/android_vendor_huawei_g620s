@@ -618,7 +618,6 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
     $(PATH_FILES)/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
     $(PATH_FILES)/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
-    $(PATH_FILES)/vendor/lib/libsc-a2xx.so:system/vendor/lib/libsc-a2xx.so \
     $(PATH_FILES)/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so \
     $(PATH_FILES)/vendor/lib/libscale.so:system/vendor/lib/libscale.so \
     $(PATH_FILES)/vendor/lib/libSHIMDivxDrm.so:system/vendor/lib/libSHIMDivxDrm.so \
