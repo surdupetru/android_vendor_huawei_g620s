@@ -22,7 +22,6 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/bin/btnvtool:system/bin/btnvtool \
     $(PATH_FILES)/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     $(PATH_FILES)/bin/irsc_util:system/bin/irsc_util \
-    $(PATH_FILES)/bin/libqmi_oem_main:system/bin/libqmi_oem_main \
     $(PATH_FILES)/bin/location-mq:system/bin/location-mq \
     $(PATH_FILES)/bin/mm-pp-daemon:system/bin/mm-pp-daemon \
     $(PATH_FILES)/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
@@ -90,16 +89,12 @@ PRODUCT_COPY_FILES += \
 
 # Lib
 PRODUCT_COPY_FILES += \
-    $(PATH_FILES)/lib/hw/lights.msm8916.so:system/lib/hw/lights.msm8916.so
-
-PRODUCT_COPY_FILES += \
     $(PATH_FILES)/lib/libchromatix_imx135_liveshot.so:system/lib/libchromatix_imx135_liveshot.so \
     $(PATH_FILES)/lib/libcutilz.so:system/lib/libcutilz.so \
     $(PATH_FILES)/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
     $(PATH_FILES)/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
     $(PATH_FILES)/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
     $(PATH_FILES)/lib/liboeminfo.so:system/lib/liboeminfo.so \
-    $(PATH_FILES)/lib/libqmi_oem_api.so:system/lib/libqmi_oem_api.so \
     $(PATH_FILES)/lib/librmnetctl.so:system/lib/librmnetctl.so
 
 # Vendor
