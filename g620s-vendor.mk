@@ -22,12 +22,6 @@ PRODUCT_PACKAGES += \
     TimeService
 
 PRODUCT_PACKAGES += \
-    cneapiclient \
-    com.qti.dpmframework \
-    com.quicinc.cne \
-    dpmapi
-
-PRODUCT_PACKAGES += \
     libmm-abl
 
 PRODUCT_PACKAGES += \
