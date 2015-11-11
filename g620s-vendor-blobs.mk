@@ -24,8 +24,8 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/bin/irsc_util:system/bin/irsc_util \
     $(PATH_FILES)/bin/mm-pp-daemon:system/bin/mm-pp-daemon \
     $(PATH_FILES)/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
+    $(PATH_FILES)/bin/mpdecision:system/bin/mpdecision \
     $(PATH_FILES)/bin/netmgrd:system/bin/netmgrd \
-    $(PATH_FILES)/bin/perfd:system/bin/perfd \
     $(PATH_FILES)/bin/qmuxd:system/bin/qmuxd \
     $(PATH_FILES)/bin/qseecomd:system/bin/qseecomd \
     $(PATH_FILES)/bin/radish:system/bin/radish \
