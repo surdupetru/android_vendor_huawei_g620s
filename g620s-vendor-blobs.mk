@@ -33,7 +33,6 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/bin/rmt_oeminfo:system/bin/rmt_oeminfo \
     $(PATH_FILES)/bin/rmt_storage:system/bin/rmt_storage \
     $(PATH_FILES)/bin/test_diag:system/bin/test_diag \
-    $(PATH_FILES)/bin/thermal-engine:system/bin/thermal-engine \
     $(PATH_FILES)/bin/time_daemon:system/bin/time_daemon \
     $(PATH_FILES)/bin/vm_bms:system/bin/vm_bms
 
@@ -94,6 +93,9 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/lib/librmnetctl.so:system/lib/librmnetctl.so
 
 # Vendor
+PRODUCT_COPY_FILES += \
+    $(PATH_FILES)/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine
+
 PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so
 
@@ -612,6 +614,7 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libqomx_jpegdec.so:system/vendor/lib/libqomx_jpegdec.so \
     $(PATH_FILES)/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so \
     $(PATH_FILES)/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
+    $(PATH_FILES)/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
     $(PATH_FILES)/vendor/lib/libril-qc-qmi-1.so:system/vendor/lib/libril-qc-qmi-1.so \
     $(PATH_FILES)/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
     $(PATH_FILES)/vendor/lib/librpmb.so:system/vendor/lib/librpmb.so \
