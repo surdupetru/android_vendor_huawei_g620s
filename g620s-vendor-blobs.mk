@@ -103,6 +103,7 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
     $(PATH_FILES)/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
     $(PATH_FILES)/vendor/lib/egl/libGLESv2_adreno.so:system/vendor/lib/egl/libGLESv2_adreno.so \
+    $(PATH_FILES)/vendor/lib/egl/libplayback_adreno.so:system/vendor/lib/egl/libplayback_adreno.so \
     $(PATH_FILES)/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so
 
 PRODUCT_COPY_FILES += \
@@ -562,6 +563,7 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
     $(PATH_FILES)/vendor/lib/libadsprpc.so:system/vendor/lib/libadsprpc.so \
     $(PATH_FILES)/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
+    $(PATH_FILES)/vendor/lib/libbccQTI.so:system/vendor/lib/libbccQTI.so \
     $(PATH_FILES)/vendor/lib/libbtnv.so:system/vendor/lib/libbtnv.so \
     $(PATH_FILES)/vendor/lib/libc2d30-a3xx.so:system/vendor/lib/libc2d30-a3xx.so \
     $(PATH_FILES)/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
