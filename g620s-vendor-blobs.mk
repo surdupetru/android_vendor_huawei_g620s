@@ -85,7 +85,8 @@ PRODUCT_COPY_FILES += \
 
 # Lib
 PRODUCT_COPY_FILES += \
-    $(PATH_FILES)/lib/hw/lights.msm8916.so:system/lib/hw/lights.msm8916.so
+    $(PATH_FILES)/lib/hw/lights.msm8916.so:system/lib/hw/lights.msm8916.so \
+    $(PATH_FILES)/lib/hw/sensors.msm8916.so:system/lib/hw/sensors.msm8916.so
 
 PRODUCT_COPY_FILES += \
     $(PATH_FILES)/lib/libchromatix_imx135_liveshot.so:system/lib/libchromatix_imx135_liveshot.so \
@@ -97,6 +98,9 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/lib/libqmi_oem_api.so:system/lib/libqmi_oem_api.so
 
 # Vendor
+PRODUCT_COPY_FILES += \
+    $(PATH_FILES)/vendor/etc/calmodule.cfg:system/vendor/etc/calmodule.cfg
+
 PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine
 
@@ -572,6 +576,7 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libbtnv.so:system/vendor/lib/libbtnv.so \
     $(PATH_FILES)/vendor/lib/libc2d30-a3xx.so:system/vendor/lib/libc2d30-a3xx.so \
     $(PATH_FILES)/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
+    $(PATH_FILES)/vendor/lib/libcalmodule_akm.so:system/vendor/lib/libcalmodule_akm.so \
     $(PATH_FILES)/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
     $(PATH_FILES)/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
     $(PATH_FILES)/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
