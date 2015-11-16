@@ -29,6 +29,16 @@ LOCAL_CERTIFICATE := platform
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := libcutilz
+LOCAL_MODULE_OWNER := huawei
+LOCAL_SRC_FILES := proprietary/lib/libcutilz.so
+LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := libHevcSwDecoder
 LOCAL_MODULE_OWNER := huawei
 LOCAL_SRC_FILES := proprietary/vendor/lib/libHevcSwDecoder.so

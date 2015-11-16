@@ -22,6 +22,9 @@ PRODUCT_PACKAGES += \
     libmm-abl
 
 PRODUCT_PACKAGES += \
+    libcutilz
+
+PRODUCT_PACKAGES += \
     libHevcSwDecoder \
     libtime_genoff
 
