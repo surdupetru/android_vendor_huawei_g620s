@@ -22,7 +22,9 @@ PRODUCT_PACKAGES += \
     libmm-abl
 
 PRODUCT_PACKAGES += \
-    libcutilz
+    libcutilz \
+    libloc_api_v02 \
+    libloc_ds_api
 
 PRODUCT_PACKAGES += \
     libHevcSwDecoder \
