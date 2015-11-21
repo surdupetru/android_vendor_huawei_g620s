@@ -20,6 +20,7 @@ PATH_FILES := vendor/huawei/g620s/proprietary
 PRODUCT_COPY_FILES += \
     $(PATH_FILES)/bin/adsprpcd:system/bin/adsprpcd \
     $(PATH_FILES)/bin/btnvtool:system/bin/btnvtool \
+    $(PATH_FILES)/bin/fm_qsoc_patches:system/bin/fm_qsoc_patches \
     $(PATH_FILES)/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     $(PATH_FILES)/bin/irsc_util:system/bin/irsc_util \
     $(PATH_FILES)/bin/libqmi_oem_main:system/bin/libqmi_oem_main \
