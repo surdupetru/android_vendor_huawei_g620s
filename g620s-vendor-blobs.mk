@@ -23,7 +23,6 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/bin/fm_qsoc_patches:system/bin/fm_qsoc_patches \
     $(PATH_FILES)/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     $(PATH_FILES)/bin/irsc_util:system/bin/irsc_util \
-    $(PATH_FILES)/bin/libqmi_oem_main:system/bin/libqmi_oem_main \
     $(PATH_FILES)/bin/location-mq:system/bin/location-mq \
     $(PATH_FILES)/bin/mm-pp-daemon:system/bin/mm-pp-daemon \
     $(PATH_FILES)/bin/mm-qcamera-app:system/bin/mm-qcamera-app \
@@ -92,7 +91,6 @@ PRODUCT_COPY_FILES += \
 # Lib
 PRODUCT_COPY_FILES += \
     $(PATH_FILES)/lib/hw/camera.msm8916.so:system/lib/hw/camera.vendor.msm8916.so \
-    $(PATH_FILES)/lib/hw/lights.msm8916.so:system/lib/hw/lights.msm8916.so \
     $(PATH_FILES)/lib/hw/sensors.msm8916.so:system/lib/hw/sensors.msm8916.so
 
 PRODUCT_COPY_FILES += \
@@ -103,7 +101,6 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/lib/libmm-omxcore.so:system/lib/libmm-omxcore.so \
     $(PATH_FILES)/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
     $(PATH_FILES)/lib/liboeminfo.so:system/lib/liboeminfo.so \
-    $(PATH_FILES)/lib/libqmi_oem_api.so:system/lib/libqmi_oem_api.so \
     $(PATH_FILES)/lib/libqomx_core.so:system/lib/libqomx_core.so
 
 # Vendor
