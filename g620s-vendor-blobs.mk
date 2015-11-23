@@ -115,7 +115,6 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
     $(PATH_FILES)/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
     $(PATH_FILES)/vendor/lib/egl/libGLESv2_adreno.so:system/vendor/lib/egl/libGLESv2_adreno.so \
-    $(PATH_FILES)/vendor/lib/egl/libplayback_adreno.so:system/vendor/lib/egl/libplayback_adreno.so \
     $(PATH_FILES)/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so
 
 PRODUCT_COPY_FILES += \
@@ -578,8 +577,8 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
     $(PATH_FILES)/vendor/lib/libadsprpc.so:system/vendor/lib/libadsprpc.so \
     $(PATH_FILES)/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
-    $(PATH_FILES)/vendor/lib/libbccQTI.so:system/vendor/lib/libbccQTI.so \
     $(PATH_FILES)/vendor/lib/libbtnv.so:system/vendor/lib/libbtnv.so \
+    $(PATH_FILES)/vendor/lib/libc2d30.so:system/vendor/lib/libc2d30.so \
     $(PATH_FILES)/vendor/lib/libc2d30-a3xx.so:system/vendor/lib/libc2d30-a3xx.so \
     $(PATH_FILES)/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
     $(PATH_FILES)/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
@@ -619,6 +618,7 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libOmxEvrcDec.so:system/vendor/lib/libOmxEvrcDec.so \
     $(PATH_FILES)/vendor/lib/libOmxQcelp13Dec.so:system/vendor/lib/libOmxQcelp13Dec.so \
     $(PATH_FILES)/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
+    $(PATH_FILES)/vendor/lib/libOpenVG.so:system/vendor/lib/libOpenVG.so \
     $(PATH_FILES)/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so \
     $(PATH_FILES)/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
     $(PATH_FILES)/vendor/lib/libqc-opt.so:system/vendor/lib/libqc-opt.so \
@@ -644,7 +644,6 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
     $(PATH_FILES)/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
     $(PATH_FILES)/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so \
-    $(PATH_FILES)/vendor/lib/libscale.so:system/vendor/lib/libscale.so \
     $(PATH_FILES)/vendor/lib/libSHIMDivxDrm.so:system/vendor/lib/libSHIMDivxDrm.so \
     $(PATH_FILES)/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so \
     $(PATH_FILES)/vendor/lib/libssd.so:system/vendor/lib/libssd.so \
