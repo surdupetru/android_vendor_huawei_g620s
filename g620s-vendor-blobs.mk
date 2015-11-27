@@ -586,12 +586,10 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
     $(PATH_FILES)/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
     $(PATH_FILES)/vendor/lib/libdisp-aba.so:system/vendor/lib/libdisp-aba.so \
-    $(PATH_FILES)/vendor/lib/libDivxDrm.so:system/vendor/lib/libDivxDrm.so \
     $(PATH_FILES)/vendor/lib/libdrmfs.so:system/vendor/lib/libdrmfs.so \
     $(PATH_FILES)/vendor/lib/libdrmtime.so:system/vendor/lib/libdrmtime.so \
     $(PATH_FILES)/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
     $(PATH_FILES)/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
-    $(PATH_FILES)/vendor/lib/libExtendedExtractor.so:system/vendor/lib/libExtendedExtractor.so \
     $(PATH_FILES)/vendor/lib/libfastcvopt.so:system/vendor/lib/libfastcvopt.so \
     $(PATH_FILES)/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     $(PATH_FILES)/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
@@ -609,8 +607,6 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
     $(PATH_FILES)/vendor/lib/libmmipl.so:system/vendor/lib/libmmipl.so \
     $(PATH_FILES)/vendor/lib/libmmjpeg.so:system/vendor/lib/libmmjpeg.so \
-    $(PATH_FILES)/vendor/lib/libmmosal.so:system/vendor/lib/libmmosal.so \
-    $(PATH_FILES)/vendor/lib/libmmparser.so:system/vendor/lib/libmmparser.so \
     $(PATH_FILES)/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
     $(PATH_FILES)/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \
     $(PATH_FILES)/vendor/lib/liboemcamera.so:system/vendor/lib/liboemcamera.so \
@@ -644,7 +640,6 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
     $(PATH_FILES)/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
     $(PATH_FILES)/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so \
-    $(PATH_FILES)/vendor/lib/libSHIMDivxDrm.so:system/vendor/lib/libSHIMDivxDrm.so \
     $(PATH_FILES)/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so \
     $(PATH_FILES)/vendor/lib/libssd.so:system/vendor/lib/libssd.so \
     $(PATH_FILES)/vendor/lib/libsystem_health_mon.so:system/vendor/lib/libsystem_health_mon.so \
