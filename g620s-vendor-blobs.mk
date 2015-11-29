@@ -41,8 +41,10 @@ PRODUCT_COPY_FILES += \
 
 # Etc
 PRODUCT_COPY_FILES += \
+PRODUCT_COPY_FILES += \
     $(PATH_FILES)/etc/data/dsi_config.xml:system/etc/data/dsi_config.xml \
-    $(PATH_FILES)/etc/data/netmgr_config.xml:system/etc/data/netmgr_config.xml
+    $(PATH_FILES)/etc/data/netmgr_config.xml:system/etc/data/netmgr_config.xml \
+    $(PATH_FILES)/etc/data/qmi_config.xml:system/etc/data/qmi_config.xml
 
 PRODUCT_COPY_FILES += \
     $(PATH_FILES)/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
