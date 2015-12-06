@@ -502,7 +502,6 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libmmcamera2_isp_modules.so:system/vendor/lib/libmmcamera2_isp_modules.so \
     $(PATH_FILES)/vendor/lib/libmmcamera2_pproc_modules.so:system/vendor/lib/libmmcamera2_pproc_modules.so \
     $(PATH_FILES)/vendor/lib/libmmcamera2_sensor_modules.so:system/vendor/lib/libmmcamera2_sensor_modules.so \
-    $(PATH_FILES)/vendor/lib/libmmcamera2_q3a_core.so:system/vendor/lib/libmmcamera2_q3a_core.so \
     $(PATH_FILES)/vendor/lib/libmmcamera2_stats_algorithm.so:system/vendor/lib/libmmcamera2_stats_algorithm.so \
     $(PATH_FILES)/vendor/lib/libmmcamera2_stats_modules.so:system/vendor/lib/libmmcamera2_stats_modules.so \
     $(PATH_FILES)/vendor/lib/libmmcamera2_vpe_module.so:system/vendor/lib/libmmcamera2_vpe_module.so \
@@ -513,8 +512,6 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libmmcamera_hdr_lib.so:system/vendor/lib/libmmcamera_hdr_lib.so \
     $(PATH_FILES)/vendor/lib/libmmcamera_hi256.so:system/vendor/lib/libmmcamera_hi256.so \
     $(PATH_FILES)/vendor/lib/libmmcamera_imglib.so:system/vendor/lib/libmmcamera_imglib.so \
-    $(PATH_FILES)/vendor/lib/libmmcamera_pdafcamif.so:system/vendor/lib/libmmcamera_pdafcamif.so \
-    $(PATH_FILES)/vendor/lib/libmmcamera_pdaf.so:system/vendor/lib/libmmcamera_pdaf.so \
     $(PATH_FILES)/vendor/lib/libmmcamera_imx132.so:system/vendor/lib/libmmcamera_imx132.so \
     $(PATH_FILES)/vendor/lib/libmmcamera_imx134.so:system/vendor/lib/libmmcamera_imx134.so \
     $(PATH_FILES)/vendor/lib/libmmcamera_imx135.so:system/vendor/lib/libmmcamera_imx135.so \
