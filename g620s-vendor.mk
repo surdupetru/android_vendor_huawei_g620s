@@ -19,15 +19,11 @@ PRODUCT_PACKAGES += \
     TimeService
 
 PRODUCT_PACKAGES += \
-    libmm-abl
-
-PRODUCT_PACKAGES += \
     libcutilz \
     libloc_api_v02 \
     libloc_ds_api
 
 PRODUCT_PACKAGES += \
-    libHevcSwDecoder \
     libtime_genoff
 
 $(call inherit-product, vendor/huawei/g620s/g620s-vendor-blobs.mk)

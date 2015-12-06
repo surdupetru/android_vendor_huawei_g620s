@@ -23,8 +23,6 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     $(PATH_FILES)/bin/irsc_util:system/bin/irsc_util \
     $(PATH_FILES)/bin/libqmi_oem_main:system/bin/libqmi_oem_main \
-    $(PATH_FILES)/bin/location-mq:system/bin/location-mq \
-    $(PATH_FILES)/bin/mm-pp-daemon:system/bin/mm-pp-daemon \
     $(PATH_FILES)/bin/mm-qcamera-app:system/bin/mm-qcamera-app \
     $(PATH_FILES)/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
     $(PATH_FILES)/bin/mpdecision:system/bin/mpdecision \
@@ -118,7 +116,11 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
     $(PATH_FILES)/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
     $(PATH_FILES)/vendor/lib/egl/libGLESv2_adreno.so:system/vendor/lib/egl/libGLESv2_adreno.so \
-    $(PATH_FILES)/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so
+    $(PATH_FILES)/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so \
+    $(PATH_FILES)/vendor/lib/egl/libQTapGLES.so:system/vendor/lib/egl/libQTapGLES.so \
+    $(PATH_FILES)/vendor/lib/egl/libRBEGL_adreno.so:system/vendor/lib/egl/libRBEGL_adreno.so \
+    $(PATH_FILES)/vendor/lib/egl/libRBGLESv1_CM_adreno.so:system/vendor/lib/egl/libRBGLESv1_CM_adreno.so \
+    $(PATH_FILES)/vendor/lib/egl/libRBGLESv2_adreno.so:system/vendor/lib/egl/libRBGLESv2_adreno.so
 
 PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so
@@ -500,6 +502,7 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libmmcamera2_isp_modules.so:system/vendor/lib/libmmcamera2_isp_modules.so \
     $(PATH_FILES)/vendor/lib/libmmcamera2_pproc_modules.so:system/vendor/lib/libmmcamera2_pproc_modules.so \
     $(PATH_FILES)/vendor/lib/libmmcamera2_sensor_modules.so:system/vendor/lib/libmmcamera2_sensor_modules.so \
+    $(PATH_FILES)/vendor/lib/libmmcamera2_q3a_core.so:system/vendor/lib/libmmcamera2_q3a_core.so \
     $(PATH_FILES)/vendor/lib/libmmcamera2_stats_algorithm.so:system/vendor/lib/libmmcamera2_stats_algorithm.so \
     $(PATH_FILES)/vendor/lib/libmmcamera2_stats_modules.so:system/vendor/lib/libmmcamera2_stats_modules.so \
     $(PATH_FILES)/vendor/lib/libmmcamera2_vpe_module.so:system/vendor/lib/libmmcamera2_vpe_module.so \
@@ -510,6 +513,8 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libmmcamera_hdr_lib.so:system/vendor/lib/libmmcamera_hdr_lib.so \
     $(PATH_FILES)/vendor/lib/libmmcamera_hi256.so:system/vendor/lib/libmmcamera_hi256.so \
     $(PATH_FILES)/vendor/lib/libmmcamera_imglib.so:system/vendor/lib/libmmcamera_imglib.so \
+    $(PATH_FILES)/vendor/lib/libmmcamera_pdafcamif.so:system/vendor/lib/libmmcamera_pdafcamif.so \
+    $(PATH_FILES)/vendor/lib/libmmcamera_pdaf.so:system/vendor/lib/libmmcamera_pdaf.so \
     $(PATH_FILES)/vendor/lib/libmmcamera_imx132.so:system/vendor/lib/libmmcamera_imx132.so \
     $(PATH_FILES)/vendor/lib/libmmcamera_imx134.so:system/vendor/lib/libmmcamera_imx134.so \
     $(PATH_FILES)/vendor/lib/libmmcamera_imx135.so:system/vendor/lib/libmmcamera_imx135.so \
@@ -581,14 +586,13 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libadsprpc.so:system/vendor/lib/libadsprpc.so \
     $(PATH_FILES)/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
     $(PATH_FILES)/vendor/lib/libbtnv.so:system/vendor/lib/libbtnv.so \
-    $(PATH_FILES)/vendor/lib/libc2d30.so:system/vendor/lib/libc2d30.so \
     $(PATH_FILES)/vendor/lib/libc2d30-a3xx.so:system/vendor/lib/libc2d30-a3xx.so \
     $(PATH_FILES)/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
     $(PATH_FILES)/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
     $(PATH_FILES)/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
     $(PATH_FILES)/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
     $(PATH_FILES)/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
-    $(PATH_FILES)/vendor/lib/libdisp-aba.so:system/vendor/lib/libdisp-aba.so \
+    $(PATH_FILES)/vendor/lib/libDivxDrm.so:system/vendor/lib/libDivxDrm.so \
     $(PATH_FILES)/vendor/lib/libdrmfs.so:system/vendor/lib/libdrmfs.so \
     $(PATH_FILES)/vendor/lib/libdrmtime.so:system/vendor/lib/libdrmtime.so \
     $(PATH_FILES)/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
@@ -602,22 +606,19 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so \
     $(PATH_FILES)/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so \
     $(PATH_FILES)/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
+    $(PATH_FILES)/vendor/lib/libllvm-glnext.so:system/vendor/lib/libllvm-glnext.so \
     $(PATH_FILES)/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
     $(PATH_FILES)/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
     $(PATH_FILES)/vendor/lib/liblowi_client.so:system/vendor/lib/liblowi_client.so \
     $(PATH_FILES)/vendor/lib/libmdmdetect.so:system/vendor/lib/libmdmdetect.so \
-    $(PATH_FILES)/vendor/lib/libmm-abl-oem.so:system/vendor/lib/libmm-abl-oem.so \
     $(PATH_FILES)/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
+    $(PATH_FILES)/vendor/lib/libmmosal.so:system/vendor/lib/libmmosal.so \
     $(PATH_FILES)/vendor/lib/libmmipl.so:system/vendor/lib/libmmipl.so \
     $(PATH_FILES)/vendor/lib/libmmjpeg.so:system/vendor/lib/libmmjpeg.so \
     $(PATH_FILES)/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
     $(PATH_FILES)/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \
     $(PATH_FILES)/vendor/lib/liboemcamera.so:system/vendor/lib/liboemcamera.so \
-    $(PATH_FILES)/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
-    $(PATH_FILES)/vendor/lib/libOmxEvrcDec.so:system/vendor/lib/libOmxEvrcDec.so \
-    $(PATH_FILES)/vendor/lib/libOmxQcelp13Dec.so:system/vendor/lib/libOmxQcelp13Dec.so \
     $(PATH_FILES)/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
-    $(PATH_FILES)/vendor/lib/libOpenVG.so:system/vendor/lib/libOpenVG.so \
     $(PATH_FILES)/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so \
     $(PATH_FILES)/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
     $(PATH_FILES)/vendor/lib/libqc-opt.so:system/vendor/lib/libqc-opt.so \
@@ -634,6 +635,7 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libqomx_jpegdec.so:system/vendor/lib/libqomx_jpegdec.so \
     $(PATH_FILES)/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so \
     $(PATH_FILES)/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
+    $(PATH_FILES)/vendor/lib/libQtiTether.so:system/vendor/lib/libQtiTether.so \
     $(PATH_FILES)/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \
     $(PATH_FILES)/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
     $(PATH_FILES)/vendor/lib/libril-qc-qmi-1.so:system/vendor/lib/libril-qc-qmi-1.so \
@@ -642,7 +644,10 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
     $(PATH_FILES)/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
     $(PATH_FILES)/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
+    $(PATH_FILES)/vendor/lib/libsc-a2xx.so:system/vendor/lib/libsc-a2xx.so \
     $(PATH_FILES)/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so \
+    $(PATH_FILES)/vendor/lib/libscale.so:system/vendor/lib/libscale.so \
+    $(PATH_FILES)/vendor/lib/libSHIMDivxDrm.so:system/vendor/lib/libSHIMDivxDrm.so \
     $(PATH_FILES)/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so \
     $(PATH_FILES)/vendor/lib/libssd.so:system/vendor/lib/libssd.so \
     $(PATH_FILES)/vendor/lib/libsystem_health_mon.so:system/vendor/lib/libsystem_health_mon.so \
@@ -655,8 +660,7 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
     $(PATH_FILES)/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
     $(PATH_FILES)/vendor/lib/libxtadapter.so:system/vendor/lib/libxtadapter.so \
-    $(PATH_FILES)/vendor/lib/libxtwifi_ulp_adaptor.so:system/vendor/lib/libxtwifi_ulp_adaptor.so \
-    $(PATH_FILES)/vendor/lib/libxtwifi_zpp_adaptor.so:system/vendor/lib/libxtwifi_zpp_adaptor.so
+    $(PATH_FILES)/vendor/lib/libxtwifi_ulp_adaptor.so:system/vendor/lib/libxtwifi_ulp_adaptor.so
 
 PRODUCT_COPY_FILES += \
     $(PATH_FILES)/bin/vm_bms:recovery/root/sbin/vm_bms
